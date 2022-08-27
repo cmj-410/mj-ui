@@ -18,6 +18,7 @@
 
 <script lang="ts">
 import './styles/index.less'
+import mjIcon from '../icon'
 import { computed, defineComponent } from 'vue'
 import { Colors } from '../../models/enums'
 import { useCheckSlot } from '../../hooks'
@@ -25,6 +26,9 @@ import { ICON_NAME_BY_COLOR, ALLOWED_TYPES } from './constants'
 
 export default defineComponent({
   name: 'mj-alert',
+  components: {
+    mjIcon
+  },
   props: {
     type: {
       type: String,
@@ -43,7 +47,7 @@ export default defineComponent({
     const defaultSlot = useCheckSlot(slots, 'default')
 
     const clickCross = () => emit('on-close')
-    const iconType = computed(() => ICON_NAME_BY_COLOR[props.type as Colors])
+    const iconType = computed(() => ICON_NAME_BY_COLOR[props.type as Colors] ?? '')
     const rootClasses = computed(() => [
       'it-alert',
       `it-alert--${props.type}`,

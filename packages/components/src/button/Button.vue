@@ -13,16 +13,16 @@
 <script lang="ts">
 import './styles/index.less'
 import { defineComponent, computed } from 'vue'
-import ItIcon from '../icon'
-import ItLoading from '../loading'
+import mjIcon from '../icon'
+import mjLoading from '../loading'
 import { Sizes, Colors } from '../../models/enums'
 // import { Sizes, Colors } from '@/models/enums'
 
 export default defineComponent({
   name: 'mj-button',
   components: {
-    ItIcon,
-    ItLoading,
+    mjIcon,
+    mjLoading,
   },
   props: {
     type: {
