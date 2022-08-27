@@ -1,11 +1,11 @@
 <template>
   <button class="it-btn" :class="rootClasses" :disabled="disabled">
-    <it-icon v-if="icon" class="it-btn-icon" :name="icon" />
+    <mj-icon v-if="icon" class="it-btn-icon" :name="icon" />
     <span v-if="$slots.default" class="it-btn-text">
       <slot />
     </span>
     <span class="it-btn-wrap-loading">
-      <it-loading v-if="loading" color="#fff" :radius="10" :stroke="3" />
+      <mj-loading v-if="loading" color="#fff" :radius="10" :stroke="3" />
     </span>
   </button>
 </template>
@@ -16,9 +16,10 @@ import { defineComponent, computed } from 'vue'
 import ItIcon from '../icon'
 import ItLoading from '../loading'
 import { Sizes, Colors } from '../../models/enums'
+// import { Sizes, Colors } from '@/models/enums'
 
 export default defineComponent({
-  name: 'it-button',
+  name: 'mj-button',
   components: {
     ItIcon,
     ItLoading,

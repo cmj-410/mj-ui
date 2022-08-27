@@ -1,16 +1,15 @@
 <template>
     <div>
-        <it-button>test</it-button>
-        <it-button icon="face">face</it-button>
+        <mj-button :loading="true">test</mj-button>
+        <mj-button icon="home">home</mj-button>
+        <mj-button type="primary">primary</mj-button>
+    </div>
+    <div>
+        <mj-alert :showIcon="true" :closable="true">aa</mj-alert>
     </div>
 </template>
 <script lang="ts" setup>
-const getFilesList = (files: File[]) => {
-    console.log(files)
-}
+
 </script>
 <style lang="less">
-.upload-demo {
-    width: 360px;
-}
 </style>

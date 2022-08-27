@@ -1,5 +1,5 @@
 {
-  "name": "kitty-ui",
+  "name": "mj-ui",
   "version": "1.0.0",
   "main": "index.ts",
   "scripts": {
@@ -10,14 +10,11 @@
     "lib"
   ],
   "keywords": [
-    "kitty-ui",
+    "mj-ui",
     "vue3组件库"
   ],
-  "author": "小月",
+  "author": "cmj",
   "license": "MIT",
   "description": "",
-  "typings": "lib/index.d.ts",
-  "dependencies": {
-    "@kitty-ui/utils": "workspace:2.0.1"
-  }
+  "typings": "lib/index.d.ts"
 }

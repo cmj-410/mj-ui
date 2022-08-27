@@ -46,15 +46,12 @@ importers:
 
   examples:
     specifiers:
-      kitty-ui: workspace:^1.0.0
+      mj-ui: workspace:^1.0.0
     dependencies:
-      kitty-ui: link:../packages/components
+      mj-ui: link:../packages/components
 
   packages/components:
-    specifiers:
-      '@kitty-ui/utils': workspace:2.0.1
-    dependencies:
-      '@kitty-ui/utils': link:../utils
+    specifiers: {}
 
   packages/components/transitpkg:
     specifiers:

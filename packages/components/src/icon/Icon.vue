@@ -1,21 +1,18 @@
 <template>
-  <i
-    class="material-icons it-icon"
-    :class="[outlined && 'material-icons-outlined', box && 'it-icon--box']"
-    :style="{
-      color,
-      'background-color': box && boxColor ? boxColor : '',
-    }"
-  >
+  <i class="material-icons it-icon" :class="[outlined && 'material-icons-outlined', box && 'it-icon--box']" :style="{
+    color,
+    'background-color': box && boxColor ? boxColor : '',
+  }">
     <slot>{{ name ? name : '' }}</slot>
   </i>
 </template>
 
 <script lang="ts">
+import './styles/index.less'
 import { defineComponent } from 'vue'
 
 export default defineComponent({
-  name: 'it-icon',
+  name: 'mj-icon',
   props: {
     name: { type: String, required: true },
     color: { type: String, default: null },

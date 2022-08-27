@@ -1,8 +1,8 @@
-import { App } from 'vue'
-import Loading from './ItLoading.vue'
+import { App } from "vue";
+import Loading from "./Loading.vue";
 
 Loading.install = (Vue: App) => {
-  Vue.component(Loading.name, Loading)
-}
+  Vue.component(Loading.name, Loading);
+};
 
-export default Loading
+export default Loading;

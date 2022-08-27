@@ -1,30 +1,19 @@
 <template>
-  <svg
-    class="it-loading"
-    :style="{
-      'max-width': `${radius * 2}px`,
-      'max-height': `${radius * 2}px`,
-    }"
-  >
-    <circle
-      class="it-loading-circle"
-      :stroke="color"
-      :stroke-width="stroke"
-      stroke-linecap="round"
-      fill="none"
-      :r="normalizedRadius"
-      :cx="radius"
-      :cy="radius"
-      pathLength="100"
-    />
+  <svg class="it-loading" :style="{
+    'max-width': `${radius * 2}px`,
+    'max-height': `${radius * 2}px`,
+  }">
+    <circle class="it-loading-circle" :stroke="color" :stroke-width="stroke" stroke-linecap="round" fill="none"
+      :r="normalizedRadius" :cx="radius" :cy="radius" pathLength="100" />
   </svg>
 </template>
 
 <script lang="ts">
+import './styles/index.less'
 import { defineComponent, computed } from 'vue'
 
 export default defineComponent({
-  name: 'it-loading',
+  name: 'mj-loading',
   props: {
     stroke: { default: 6, type: Number },
     radius: { default: 32, type: Number },

@@ -1,5 +1,8 @@
 import * as components from "./src/index";
 export * from "./src/index";
+
+import "./styles/index.less";
+
 export default {
   install: (app: any) => {
     for (const comkey in components) {

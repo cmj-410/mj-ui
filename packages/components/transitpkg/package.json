@@ -1,5 +1,5 @@
 {
-  "name": "kitty-ui",
+  "name": "mj-ui",
   "version": "3.0.9",
   "main": "lib/index.js",
   "module": "es/index.js",
@@ -8,13 +8,13 @@
     "lib"
   ],
   "keywords": [
-    "kitty-ui",
+    "mj-ui",
     "vue3组件库"
   ],
   "dependencies": {
-    "@kitty-ui/utils": "2.0.1"
+    "@mj-ui/utils": "2.0.1"
   },
-  "author": "小月",
+  "author": "cmj",
   "license": "MIT",
   "description": "",
   "typings": "lib/index.d.ts"

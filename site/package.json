@@ -15,6 +15,6 @@
     "vitepress": "1.0.0-alpha.4"
   },
   "dependencies": {
-    "kitty-ui": "workspace:1.0.0"
+    "mj-ui": "workspace:1.0.0"
   }
 }

@@ -1,10 +1,10 @@
 {
-  "name": "kittyui",
+  "name": "myuilib",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "keywords": [],
-  "author": "",
+  "author": "cmj",
   "license": "ISC",
   "scripts": {
     "build:kitty": "gulp -f packages/components/script/build/gulpfile.ts",
