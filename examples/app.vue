@@ -1,6 +1,7 @@
 <template>
-    <div class="upload-demo">
-        <k-upload @getFilesList="getFilesList" drag multiple accept="image/*"></k-upload>
+    <div>
+        <it-button>test</it-button>
+        <it-button icon="face">face</it-button>
     </div>
 </template>
 <script lang="ts" setup>

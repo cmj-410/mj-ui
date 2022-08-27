@@ -1,4 +1,8 @@
-import icon from './icon.vue'
-import { withInstall } from '@kitty-ui/utils'
-const Icon = withInstall(icon)
-export default Icon 
+import { App } from 'vue'
+import Icon from './ItIcon.vue'
+
+Icon.install = (Vue: App) => {
+  Vue.component(Icon.name, Icon)
+}
+
+export default Icon

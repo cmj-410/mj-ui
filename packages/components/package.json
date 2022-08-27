@@ -3,9 +3,7 @@
   "version": "1.0.0",
   "main": "index.ts",
   "scripts": {
-    "build": "vite build",
-    "test": "vitest",
-    "coverage": "vitest run --coverage"
+    "build": "vite build"
   },
   "files": [
     "es",

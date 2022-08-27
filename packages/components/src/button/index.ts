@@ -1,4 +1,8 @@
-import button from './button.vue'
-import { withInstall } from '@kitty-ui/utils'
-const Button = withInstall(button)
+import { App } from 'vue'
+import Button from './ItButton.vue'
+
+Button.install = (Vue: App) => {
+  Vue.component(Button.name, Button)
+}
+
 export default Button
