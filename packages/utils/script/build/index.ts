@@ -4,11 +4,6 @@ import less from "gulp-less";
 import autoprefixer from "gulp-autoprefixer";
 import run from "../utils/run";
 
-//删除dist
-export const removeDist = () => {
-  return run(`rm -rf ${componentPath}/dist`, componentPath);
-};
-
 //处理样式
 export const buildStyle = () => {
   return src(`${componentPath}/src/**/styles/**.less`)

@@ -7,7 +7,8 @@
   "author": "cmj",
   "license": "ISC",
   "scripts": {
-    "build:mjUI": "gulp -f packages/utils/script/build/gulpfile.ts",
+    "clean:dist": "rimraf ./packages/components/dist",
+    "build:mjUI": "pnpm run clean:dist && gulp -f packages/utils/script/build/gulpfile.ts",
     "publish:mjUI": "gulp -f packages/components/script/publish/gulpfile.ts",
     "docs:dev": "pnpm run --filter ./site docs:dev",
     "docs:build": "pnpm run --filter ./site docs:build",
@@ -27,6 +28,7 @@
     "gulp-autoprefixer": "^8.0.0",
     "gulp-less": "^5.0.0",
     "less": "^4.1.3",
+    "rimraf": "^3.0.2",
     "sucrase": "^3.24.0",
     "typescript": "^4.7.4",
     "vite": "3.0.9",
