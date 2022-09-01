@@ -7,7 +7,7 @@
   "author": "cmj",
   "license": "ISC",
   "scripts": {
-    "build:mjUI": "gulp -f packages/components/script/build/gulpfile.ts",
+    "build:mjUI": "gulp -f packages/utils/script/build/gulpfile.ts",
     "publish:mjUI": "gulp -f packages/components/script/publish/gulpfile.ts",
     "docs:dev": "pnpm run --filter ./site docs:dev",
     "docs:build": "pnpm run --filter ./site docs:build",
@@ -32,7 +32,6 @@
     "vite": "3.0.9",
     "vite-plugin-dts": "^1.4.1",
     "vite-plugin-libcss": "^1.0.5",
-    "vitest": "^0.21.1",
     "vue": "^3.2.36"
   }
 }

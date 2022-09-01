@@ -4,12 +4,17 @@
         <mj-button icon="home">home</mj-button>
         <mj-button type="primary">primary</mj-button>
     </div>
-    <div class="thisWidth2">
-        <mj-alert :showIcon="true" :closable="true">aa</mj-alert>
-    </div>
+    <mj-alert type="primary" title="alertTitle" body="alertBody" />
+    <mj-button-group>
+        <mj-button :loading="true">test</mj-button>
+        <mj-button icon="home">home</mj-button>
+    </mj-button-group>
+    <mj-checkbox label="haha" :modelValue="value1">{{ value1 }}</mj-checkbox>
 </template>
 <script lang="ts" setup>
+import { ref } from 'vue';
 
+const value1 = ref(false)
 </script>
 <style lang="less">
 .thisWidth {
