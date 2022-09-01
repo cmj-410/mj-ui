@@ -13,7 +13,7 @@ export default defineConfig({
     //cssCodeSplit: true,
     rollupOptions: {
       //忽略打包vue文件
-      external: ["vue", /\.less/, "@kitty-ui/utils"],
+      external: ["vue", /\.less/],
       input: ["index.ts"],
       output: [
         {
@@ -55,7 +55,6 @@ export default defineConfig({
       //指定使用的tsconfig.json为我们整个项目根目录下掉,如果不配置,你也可以在components下新建tsconfig.json
       tsConfigFilePath: "../../tsconfig.json",
     }),
-
     {
       name: "style",
       generateBundle(config, bundle) {

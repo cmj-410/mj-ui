@@ -57,6 +57,12 @@ importers:
     dependencies:
       '@mj-ui/models': link:models
 
+  packages/components/src:
+    specifiers:
+      '@mj-ui/hooks': workspace:^1.0.0
+    dependencies:
+      '@mj-ui/hooks': link:../hooks
+
   packages/components/transitpkg:
     specifiers:
       '@kitty-ui/utils': 2.0.1
