@@ -47,15 +47,19 @@
     <mj-divider></mj-divider>
     <div>3434</div>
     <h1>5.dropDown测试</h1>
-    <mj-dropdown>
+    <mj-dropdown placement="right">
         <mj-button>Hover me</mj-button>
-        <mj-dropdown-menu slot="menu">
-            <mj-dropdown-item>Hello</mj-dropdown-item>
-            <mj-dropdown-item disabled>Disabled</mj-dropdown-item>
-            <mj-dropdown-item icon="cloud">Cloud</mj-dropdown-item>
-            <mj-dropdown-item divided>Divided</mj-dropdown-item>
-        </mj-dropdown-menu>
+        <template #menu>
+            <mj-dropdown-menu>
+                <mj-dropdown-item>Hello</mj-dropdown-item>
+                <mj-dropdown-item disabled>Disabled</mj-dropdown-item>
+                <mj-dropdown-item icon="cloud">Cloud</mj-dropdown-item>
+                <mj-dropdown-item divided>Divided</mj-dropdown-item>
+            </mj-dropdown-menu>
+        </template>
     </mj-dropdown>
+    <h1>6.input测试</h1>
+    <mj-input placeholder="placeholder" labelTop="labelTop" prefixIcon="lock"></mj-input>
 </template>
 <script lang="ts" setup>
 import { Colors, Sizes } from './enums'

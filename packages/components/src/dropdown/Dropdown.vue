@@ -33,20 +33,6 @@ export default defineComponent({
       default: Positions.B,
       type: String,
       validator: (value: Positions) =>
-        // [
-        //   Positions.B,
-        //   Positions.BL,
-        //   Positions.BR,
-        //   Positions.L,
-        //   Positions.LT,
-        //   Positions.LB,
-        //   Positions.R,
-        //   Positions.RT,
-        //   Positions.RB,
-        //   Positions.T,
-        //   Positions.TL,
-        //   Positions.TR,
-        // ].includes(value),
         Object.values(Positions)
           .includes(value),
     },

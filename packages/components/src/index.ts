@@ -8,5 +8,6 @@ const [Dropdown, DropdownMenu, DropdownItem] = [
   ...Object.values(totalDropdown),
 ];
 export { Dropdown, DropdownMenu, DropdownItem };
-export { default as Icon } from "./Icon";
+export { default as Icon } from "./icon";
+export { default as Input } from "./input";
 export { default as Loading } from "./loading";
