@@ -1,10 +1,10 @@
 <template>
-  <button class="it-btn" :class="rootClasses" :disabled="disabled">
-    <mj-icon v-if="icon" class="it-btn-icon" :name="icon" />
-    <span v-if="$slots.default" class="it-btn-text">
+  <button class="mj-btn" :class="rootClasses" :disabled="disabled">
+    <mj-icon v-if="icon" class="mj-btn-icon" :name="icon" />
+    <span v-if="$slots.default" class="mj-btn-text">
       <slot />
     </span>
-    <span class="it-btn-wrap-loading">
+    <span class="mj-btn-wrap-loading">
       <mj-loading v-if="loading" color="#fff" :radius="10" :stroke="3" />
     </span>
   </button>
@@ -49,19 +49,19 @@ export default defineComponent({
     const rootClasses = computed(() => [
       {
         pulse: props.pulse,
-        'it-btn--empty': !slots.default,
-        'it-btn--outlined': props.outlined,
-        'it-btn--round': props.round,
-        'it-btn--block': props.block,
-        'it-btn--text': props.text,
-        'it-btn--loading': props.loading,
-        [`it-btn--${props.size}`]: props.size,
+        'mj-btn--empty': !slots.default,
+        'mj-btn--outlined': props.outlined,
+        'mj-btn--round': props.round,
+        'mj-btn--block': props.block,
+        'mj-btn--text': props.text,
+        'mj-btn--loading': props.loading,
+        [`mj-btn--${props.size}`]: props.size,
         ...(props.type
-          ? { [`it-btn--${props.type}`]: true }
-          : { 'it-btn--neutral': true }),
+          ? { [`mj-btn--${props.type}`]: true }
+          : { 'mj-btn--neutral': true }),
         ...(props.icon
           ? {
-            [props.iconAfter ? 'it-btn--icon-right' : 'it-btn--icon-left']:
+            [props.iconAfter ? 'mj-btn--icon-right' : 'mj-btn--icon-left']:
               true,
           }
           : null),

@@ -1,10 +1,10 @@
 <template>
-  <li class="it-dropdown-item" :class="[
-    disabled && 'it-dropdown-item--disabled',
-    divided && 'it-dropdown-item--divided',
+  <li class="mj-dropdown-item" :class="[
+    disabled && 'mj-dropdown-item--disabled',
+    divided && 'mj-dropdown-item--divided',
   ]">
-    <mj-icon v-if="icon" class="it-dropdown-icon" :name="icon"></mj-icon>
-    <span class="it-dropdown-text">
+    <mj-icon v-if="icon" class="mj-dropdown-icon" :name="icon"></mj-icon>
+    <span class="mj-dropdown-text">
       <slot></slot>
     </span>
   </li>

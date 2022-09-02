@@ -1,7 +1,7 @@
 <template>
-  <div class="it-divider" :class="{
-    'it-divider--horizontal': !vertical,
-    'it-divider--vertical': vertical,
+  <div class="mj-divider" :class="{
+    'mj-divider--horizontal': !vertical,
+    'mj-divider--vertical': vertical,
   }" role="separator"></div>
 </template>
 

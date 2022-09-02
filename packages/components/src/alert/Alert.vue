@@ -1,17 +1,17 @@
 <template>
   <transition name="fade">
     <div v-show="visible" :class="rootClasses">
-      <div v-if="showIcon" class="it-alert-iconbox">
-        <mj-icon :box="iconbox" class="it-alert-icon" :name="iconType" />
+      <div v-if="showIcon" class="mj-alert-iconbox">
+        <mj-icon :box="iconbox" class="mj-alert-icon" :name="iconType" />
       </div>
       <div>
-        <p class="it-alert-title">{{ title }}</p>
-        <p v-if="!defaultSlot && body" class="it-alert-slot">{{ body }}</p>
-        <p v-if="defaultSlot" class="it-alert-slot">
+        <p class="mj-alert-title">{{ title }}</p>
+        <p v-if="!defaultSlot && body" class="mj-alert-slot">{{ body }}</p>
+        <p v-if="defaultSlot" class="mj-alert-slot">
           <slot />
         </p>
       </div>
-      <mj-icon v-if="closable" name="clear" class="it-alert-close" @click="clickCross" />
+      <mj-icon v-if="closable" name="clear" class="mj-alert-close" @click="clickCross" />
     </div>
   </transition>
 </template>
@@ -49,9 +49,9 @@ export default defineComponent({
     const clickCross = () => emit('on-close')
     const iconType = computed(() => ICON_NAME_BY_COLOR[props.type as Colors] ?? '')
     const rootClasses = computed(() => [
-      'it-alert',
-      `it-alert--${props.type}`,
-      !props.body && !defaultSlot?.value && 'it-alert--small',
+      'mj-alert',
+      `mj-alert--${props.type}`,
+      !props.body && !defaultSlot?.value && 'mj-alert--small',
     ])
 
     return {

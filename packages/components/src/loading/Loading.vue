@@ -1,9 +1,9 @@
 <template>
-  <svg class="it-loading" :style="{
+  <svg class="mj-loading" :style="{
     'max-width': `${radius * 2}px`,
     'max-height': `${radius * 2}px`,
   }">
-    <circle class="it-loading-circle" :stroke="color" :stroke-width="stroke" stroke-linecap="round" fill="none"
+    <circle class="mj-loading-circle" :stroke="color" :stroke-width="stroke" stroke-linecap="round" fill="none"
       :r="normalizedRadius" :cx="radius" :cy="radius" pathLength="100" />
   </svg>
 </template>

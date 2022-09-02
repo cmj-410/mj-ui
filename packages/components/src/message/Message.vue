@@ -1,9 +1,9 @@
 <template>
   <transition name="fade-bottom" @after-leave="destroy">
-    <div v-show="show" :style="{ top: `${top}px` }" class="it-message" :class="[`it-message--${type}`]"
+    <div v-show="show" :style="{ top: `${top}px` }" class="mj-message" :class="[`mj-message--${type}`]"
       @mouseleave="startTimer" @mouseenter="clearTimer">
-      <mj-icon class="it-message-icon" :name="icon || computedIcon" />
-      <span class="it-message-text">{{ text }}</span>
+      <mj-icon class="mj-message-icon" :name="icon || computedIcon" />
+      <span class="mj-message-text">{{ text }}</span>
     </div>
   </transition>
 </template>

@@ -24,7 +24,7 @@
     box-shadow: 0 2px 4px fade(@bg-color, 40%), 0 0 0 3px fade(@bg-color, 20%);
   }
 
-  &.it-btn--text {
+  &.mj-btn--text {
     color: @bg-color;
     background: transparent;
     border: none;
@@ -32,15 +32,15 @@
     box-shadow: none;
   }
 
-  &.it-btn--text:hover {
+  &.mj-btn--text:hover {
     background-color: fade(@bg-color, 6%);
   }
 
-  &.it-btn--text:focus {
+  &.mj-btn--text:focus {
     box-shadow: 0 0 0 3px fade(@bg-color, 20%);
   }
 
-  &.it-btn--text:active {
+  &.mj-btn--text:active {
     background-color: fade(@bg-color, 20%);
     box-shadow: none;
   }
@@ -83,7 +83,7 @@
   }
 }
 
-.it-btn {
+.mj-btn {
   max-width: 100%;
   box-sizing: border-box;
   position: relative;
@@ -117,7 +117,7 @@
     }
   }
 
-  .it-icon {
+  .mj-icon {
     font-size: 14px;
     margin-top: -2px;
   }
@@ -131,17 +131,17 @@
 
   &--icon {
     &-left {
-      .it-btn-text {
+      .mj-btn-text {
         margin-left: 6px;
       }
     }
 
     &-right {
-      .it-btn-icon {
+      .mj-btn-icon {
         order: 2;
       }
 
-      .it-btn-text {
+      .mj-btn-text {
         order: 1;
         margin-right: 6px;
       }
@@ -217,7 +217,7 @@
       stroke: rgb(193, 204, 217);
     }
 
-    &.it-btn--text {
+    &.mj-btn--text {
       color: @color-black;
       background: transparent;
       border: none;
@@ -225,15 +225,15 @@
       box-shadow: none;
     }
 
-    &.it-btn--text:hover {
+    &.mj-btn--text:hover {
       background-color: fade(@color-black, 6%);
     }
 
-    &.it-btn--text:focus {
+    &.mj-btn--text:focus {
       box-shadow: 0 0 0 3px fade(#a6b0bb, 20%);
     }
 
-    &.it-btn--text:active {
+    &.mj-btn--text:active {
       background-color: fade(@color-black, 20%);
       box-shadow: none;
     }
@@ -271,8 +271,8 @@
   }
 
   &--loading {
-    .it-btn-text,
-    .it-btn-icon {
+    .mj-btn-text,
+    .mj-btn-icon {
       visibility: hidden;
     }
   }

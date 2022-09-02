@@ -1,5 +1,5 @@
 <template>
-  <i class="material-icons it-icon" :class="[outlined && 'material-icons-outlined', box && 'it-icon--box']" :style="{
+  <i class="material-icons mj-icon" :class="[outlined && 'material-icons-outlined', box && 'mj-icon--box']" :style="{
     color,
     'background-color': box && boxColor ? boxColor : '',
   }">

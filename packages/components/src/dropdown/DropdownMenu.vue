@@ -1,5 +1,5 @@
 <template>
-  <ul class="it-dropdown-menu">
+  <ul class="mj-dropdown-menu">
     <slot></slot>
   </ul>
 </template>

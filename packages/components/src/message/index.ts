@@ -34,7 +34,7 @@ const Message = (options: IMessageOptions = {}) => {
 
   const newData = Object.assign(options, { id })
   for (const [key, value] of Object.entries(newData)) {
-    instance.$data[key] = value
+    ;(instance.$data as any)[key] = value
   }
 
   document.body.appendChild(instance.$el)

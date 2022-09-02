@@ -1,31 +1,31 @@
 <template>
-  <label class="it-checkbox-wrapper">
-    <span class="it-checkbox-check-wrapper" :class="[pulse && !disabled && 'pulse']">
-      <input type="checkbox" v-bind="$attrs" class="it-checkbox-input" :disabled="disabled" @change="toggle" />
-      <span class="it-checkbox" :class="[
-        `it-checkbox--${type}`,
-        modelValue && `it-checkbox--${type}--checked`,
-        disabled && 'it-checkbox--disabled',
+  <label class="mj-checkbox-wrapper">
+    <span class="mj-checkbox-check-wrapper" :class="[pulse && !disabled && 'pulse']">
+      <input type="checkbox" v-bind="$attrs" class="mj-checkbox-input" :disabled="disabled" @change="toggle" />
+      <span class="mj-checkbox" :class="[
+        `mj-checkbox--${type}`,
+        modelValue && `mj-checkbox--${type}--checked`,
+        disabled && 'mj-checkbox--disabled',
       ]">
         <mj-icon style="font-size: 16px" :name="icon" />
       </span>
     </span>
-    <span class="it-checkbox-label-group">
-      <span v-if="label && !$slots.default" class="it-checkbox-label" :class="[
-        lineThrough && modelValue && 'it-checkbox-label--linethrough',
-        disabled && 'it-checkbox-label--disabled',
+    <span class="mj-checkbox-label-group">
+      <span v-if="label && !$slots.default" class="mj-checkbox-label" :class="[
+        lineThrough && modelValue && 'mj-checkbox-label--linethrough',
+        disabled && 'mj-checkbox-label--disabled',
       ]">{{ label }}</span>
-      <span v-if="subLabel && !$slots.sublabel" class="it-checkbox-label it-checkbox-label--sub"
-        :class="[disabled && 'it-checkbox-label--disabled']">{{ subLabel }}</span>
+      <span v-if="subLabel && !$slots.sublabel" class="mj-checkbox-label mj-checkbox-label--sub"
+        :class="[disabled && 'mj-checkbox-label--disabled']">{{ subLabel }}</span>
 
-      <span v-if="$slots.default" class="it-checkbox-label" :class="[
-        lineThrough && modelValue && 'it-checkbox-label--linethrough',
-        disabled && 'it-checkbox-label--disabled',
+      <span v-if="$slots.default" class="mj-checkbox-label" :class="[
+        lineThrough && modelValue && 'mj-checkbox-label--linethrough',
+        disabled && 'mj-checkbox-label--disabled',
       ]">
         <slot></slot>
       </span>
-      <span v-if="$slots.sublabel" class="it-checkbox-label it-checkbox-label--sub"
-        :class="[disabled && 'it-checkbox-label--disabled']">
+      <span v-if="$slots.sublabel" class="mj-checkbox-label mj-checkbox-label--sub"
+        :class="[disabled && 'mj-checkbox-label--disabled']">
         <slot name="sublabel"></slot>
       </span>
     </span>

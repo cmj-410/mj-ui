@@ -1,6 +1,6 @@
 <template>
-  <div class="it-button-group" :class="
-    vertical ? 'it-button-group--vertical' : 'it-button-group--horizontal'
+  <div class="mj-button-group" :class="
+    vertical ? 'mj-button-group--vertical' : 'mj-button-group--horizontal'
   ">
     <slot />
   </div>

@@ -1,12 +1,12 @@
 <template>
-  <div v-clickoutside="hidePopover" class="it-dropdown" v-on="listeners">
-    <div ref="trigger" class="it-dropdown-trigger">
+  <div v-clickoutside="hidePopover" class="mj-dropdown" v-on="listeners">
+    <div ref="trigger" class="mj-dropdown-trigger">
       <slot></slot>
     </div>
 
     <transition :name="transition">
-      <div v-show="show" ref="popover" class="it-dropdown-slot"
-        :class="[placement && `it-dropdown-slot--${placementSide}`]">
+      <div v-show="show" ref="popover" class="mj-dropdown-slot"
+        :class="[placement && `mj-dropdown-slot--${placementSide}`]">
         <slot name="menu"></slot>
       </div>
     </transition>
