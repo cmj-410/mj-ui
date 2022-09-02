@@ -1,61 +1,16 @@
 <style scoped>
-    .example{
-        border: 1px solid #f5f5f5;
-        border-radius: 5px;
-        padding:20px
-    }
-    .k-button {
-        margin:10px 5px !important
-    }
-    
-    details > summary:first-of-type {
-        font-size: 10px;
-        padding: 8px 0;
-        cursor: pointer;
-        color: #1989fa;
-    }
-    a {
-      all: initial
-    }
-    a:hover {
-      all: initial
-    }
 </style>
 
-# k-button 按钮
+# mj-button 按钮
 
 ## 基础用法
 
 使用 type、plain、round 和 circle 来定义按钮的样式。
 
-<div class="example">
+<div>
     <div>
-        <k-button>默认按钮</k-button>
-        <k-button icon="edit" type="primary">主要按钮</k-button>
-        <k-button type="success">成功按钮</k-button>
-        <k-button type="info">信息按钮</k-button>
-        <k-button type="warning">警告按钮</k-button>
-        <k-button type="danger">危险按钮</k-button>
-        <k-button type="text">文字按钮</k-button>
-        <br>
-        <br>
-        <k-button plain>朴素按钮</k-button>
-        <k-button type="primary" plain>主要按钮</k-button>
-        <k-button type="success" plain>成功按钮</k-button>
-        <k-button type="info" plain>信息按钮</k-button>
-        <k-button type="warning" plain>警告按钮</k-button>
-        <k-button type="danger" plain>危险按钮</k-button>
-        <br>
-        <br>
-        <k-button round>圆角按钮</k-button>
-        <k-button type="primary" round>主要按钮</k-button>
-        <k-button type="success" round>成功按钮</k-button>
-        <k-button type="info" round>信息按钮</k-button>
-        <k-button type="warning" round>警告按钮</k-button>
-        <k-button type="danger" round>危险按钮</k-button>
-        <a>123</a>
+        <mj-button>hh</mj-button>
     </div>
-
 </div>
 
 <details>
@@ -64,39 +19,12 @@
 ```vue
 <template>
   <div>
-    <k-button>默认按钮</k-button>
-    <k-button type="primary">主要按钮</k-button>
-    <k-button type="success">成功按钮</k-button>
-    <k-button type="info">信息按钮</k-button>
-    <k-button type="warning">警告按钮</k-button>
-    <k-button type="danger">危险按钮</k-button>
-    <k-button type="text">文字按钮</k-button>
-    <br />
-    <br />
-    <k-button plain>朴素按钮</k-button>
-    <k-button type="primary" plain>主要按钮</k-button>
-    <k-button type="success" plain>成功按钮</k-button>
-    <k-button type="info" plain>信息按钮</k-button>
-    <k-button type="warning" plain>警告按钮</k-button>
-    <k-button type="danger" plain>危险按钮</k-button>
-    <br />
-    <br />
-    <k-button round>圆角按钮</k-button>
-    <k-button type="primary" round>主要按钮</k-button>
-    <k-button type="success" round>成功按钮</k-button>
-    <k-button type="info" round>信息按钮</k-button>
-    <k-button type="warning" round>警告按钮</k-button>
-    <k-button type="danger" round>危险按钮</k-button>
+    <mj-button>hh</mj-button>
   </div>
 </template>
 <script lang="ts" setup>
-import { k-button } from "kitty-ui";
+import { mj-button } from "mj-ui";
 </script>
-<style>
-.k-k-button {
-  margin-right: 10px;
-}
-</style>
 ```
 
 </details>
@@ -145,7 +73,7 @@ import { k-button } from "kitty-ui";
   </div>
 </template>
 <script lang="ts" setup>
-import { k-button } from "kitty-ui";
+import { mj-button } from "mj-ui";
 </script>
 <style>
 .k-k-button {

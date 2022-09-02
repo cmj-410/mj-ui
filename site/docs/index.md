@@ -1,16 +1,16 @@
 ---
 layout: home
 
-title: Kitty
-titleTemplate: 一个Vue3组件库
+title: mj-ui
+titleTemplate: Vue3+ts组件库
 
 hero:
-  name: Kitty
-  text: 一个Vue3组件库
-  tagline: 没啥特点仅供学习
+  name: mj-ui
+  text: Vue3+ts组件库
+  tagline: 个人组件库
   image:
-    src: /logo.png
-    alt: Kitty
+    src: /mjUI_logo.png
+    alt: mj-ui
   actions:
     - theme: brand
       text: 开始

@@ -1,52 +1,52 @@
 export default {
   themeConfig: {
     siteTitle: false,
-    logo: "/logo.png",
+    logo: '/mjUI_logo.png',
     nav: [
-      { text: "指南", link: "/guild/installation" },
-      { text: "组件", link: "/examples/button/" },
+      { text: '指南', link: '/guild/installation' },
+      { text: '组件', link: '/examples/button/' },
     ],
-    socialLinks: [{ icon: "github", link: "https://gitee.com/geeksdidi" }],
+    socialLinks: [{ icon: 'github', link: 'https://' }],
     sidebar: {
-      "/guild/": [
+      '/guild/': [
         {
-          text: "基础",
+          text: '基础',
           items: [
             {
-              text: "安装",
-              link: "/guild/installation",
+              text: '安装',
+              link: '/guild/installation',
             },
             {
-              text: "快速开始",
-              link: "/guild/quickstart",
+              text: '快速开始',
+              link: '/guild/quickstart',
             },
           ],
         },
         {
-          text: "进阶",
+          text: '进阶',
           items: [
             {
-              text: "xx",
-              link: "/xx",
+              text: 'xx',
+              link: '/xx',
             },
           ],
         },
       ],
-      "/examples/": [
+      '/examples/': [
         {
-          text: "基础组件",
+          text: '基础组件',
           items: [
             {
-              text: "Button按钮",
-              link: "/examples/button/",
+              text: 'alert',
+              link: '/examples/alert/',
             },
             {
-              text: "Icon图标",
-              link: "/examples/Icon/",
+              text: 'button',
+              link: '/examples/button/',
             },
           ],
         },
       ],
     },
   },
-};
+}
