@@ -60,6 +60,11 @@
     </mj-dropdown>
     <h1>6.input测试</h1>
     <mj-input placeholder="placeholder" labelTop="labelTop" prefixIcon="lock"></mj-input>
+    <h1>7.message测试</h1>
+    <mj-button @click="$Message({ duration: 5000, text: 'I have 5000ms left' })">Primary message</mj-button>
+    <mj-button @click="showMessage('success')" type="success">Success message</mj-button>
+    <mj-button @click="showMessage('danger')" type="danger">Danger message</mj-button>
+    <mj-button @click="showMessage('warning')" type="warning">Warning message</mj-button>
 </template>
 <script lang="ts" setup>
 import { Colors, Sizes } from './enums'
@@ -71,6 +76,32 @@ const smallColorList = colorList.filter(val => val != 'neutral' && val != 'black
 const sizeList = Object.values(Sizes)
 
 const value1 = ref(true)
+
+</script>
+
+<script lang="ts">
+import { defineComponent } from 'vue'
+
+export default defineComponent({
+    methods: {
+        showMessage(type: string) {
+            switch (type) {
+                case 'success':
+                    this.$Message.success({ text: 'Success message!' })
+                    break
+                case 'danger':
+                    this.$Message.danger({ text: 'Danger message!' })
+                    break
+                case 'warning':
+                    this.$Message.warning({ text: 'Warning message!' })
+                    break
+                default:
+                    this.$Message({ text: 'Primary message!' })
+                    break
+            }
+        },
+    }
+})
 </script>
 <style lang="less" scoped>
 .showBtn {
