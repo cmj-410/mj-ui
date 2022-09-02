@@ -6,7 +6,7 @@ export default {
   install: (app: any) => {
     for (const comkey in components) {
       // if (comkey == 'Message') {
-      if ((components as any)[comkey].name == 'Message') {
+      if ((components as any)[comkey].theName == 'mj-' + 'message') {
         const temp = (components as any)[comkey]
         temp._context = app._context
         app.config.globalProperties.$Message = temp

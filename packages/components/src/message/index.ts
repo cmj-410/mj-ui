@@ -73,4 +73,6 @@ messageTypes.forEach((type) => {
   Message[type] = (options: IMessageOptions) => Message({ type, ...options })
 })
 
+Message.theName = MessageVue.name
+
 export default Message
