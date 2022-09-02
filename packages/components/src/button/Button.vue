@@ -16,7 +16,7 @@ import { defineComponent, computed } from 'vue'
 import mjIcon from '../icon'
 import mjLoading from '../loading'
 import { Sizes, Colors } from '../../models/enums'
-// import { Sizes, Colors } from '@/models/enums'
+// import { Sizes, Colors } from '@models/enums'
 
 export default defineComponent({
   name: 'mj-button',

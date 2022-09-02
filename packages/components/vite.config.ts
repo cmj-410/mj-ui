@@ -75,8 +75,19 @@ export default defineConfig({
     },
   ],
   resolve: {
-    alias: {
-      "@": resolve(__dirname),
-    },
+    alias: [
+      {
+        find: "@models",
+        replacement: resolve(__dirname, "/models"),
+      },
+      {
+        find: "@hooks",
+        replacement: resolve(__dirname, "/hooks"),
+      },
+      {
+        find: "@directives",
+        replacement: resolve(__dirname, "/directives"),
+      },
+    ],
   },
 });

@@ -1,7 +1,7 @@
 import { createApp } from "vue";
 import App from "./app.vue";
 const app = createApp(App);
-import mjUI from "mj-ui/dist/es/index";
-// import mjUI from "mj-ui";
+// import mjUI from "mj-ui/dist/es/index";
+import mjUI from "mj-ui";
 app.use(mjUI);
 app.mount("#app");
