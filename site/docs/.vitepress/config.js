@@ -4,9 +4,9 @@ export default {
     logo: '/mjUI_logo.png',
     nav: [
       { text: '指南', link: '/guild/installation' },
-      { text: '组件', link: '/examples/button/' },
+      { text: '组件', link: '/examples/alert/' },
     ],
-    socialLinks: [{ icon: 'github', link: 'https://' }],
+    socialLinks: [{ icon: 'github', link: 'https://github.com/cmj-410/mj-ui' }],
     sidebar: {
       '/guild/': [
         {
@@ -35,6 +35,7 @@ export default {
       '/examples/': [
         {
           text: '基础组件',
+          collapsible: true,
           items: [
             {
               text: 'alert',

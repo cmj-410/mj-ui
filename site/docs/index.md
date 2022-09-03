@@ -7,7 +7,7 @@ titleTemplate: Vue3+ts组件库
 hero:
   name: mj-ui
   text: Vue3+ts组件库
-  tagline: 个人组件库
+  tagline: cmj个人组件库
   image:
     src: /mjUI_logo.png
     alt: mj-ui
@@ -16,8 +16,8 @@ hero:
       text: 开始
       link: /guide/
     - theme: alt
-      text: 在 Gitee 上查看
-      link: https://gitee.com/geeksdidi/kittyui
+      text: 在 Github 上查看
+      link: https://github.com/cmj-410/mj-ui
 
 features:
   - icon: 💡
