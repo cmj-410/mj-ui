@@ -45,6 +45,10 @@ export default {
               text: 'button',
               link: '/examples/button/',
             },
+            {
+              text: 'select',
+              link: '/examples/select/',
+            },
           ],
         },
       ],
