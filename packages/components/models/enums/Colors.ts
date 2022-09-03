@@ -4,5 +4,4 @@ export enum Colors {
   SUCCESS = 'success',
   DANGER = 'danger',
   WARNING = 'warning',
-  BLACK = 'black',
 }

@@ -13,32 +13,33 @@
 </template>
 
 <script lang="ts" setup>
-defineProps(["title"])
+defineProps(['title'])
 </script>
 
 <style lang="less" scoped>
 @border-color: #d3dae6;
 
 h3 {
-  margin: 0;
+  text-align: center;
+  margin: 0 0 10px 0;
   border-bottom: 1px solid @border-color;
 }
 
 .showBox-wrapper {
-  border: 1px solid #d3dae6;
+  border: 1px solid @border-color;
   display: flex;
   justify-content: center;
 
   .showBox-left {
     flex: 1;
-    flex-basis: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border-right: 1px solid #d3dae6;
+    border-right: 1px solid @border-color;
 
     &-content {
-      margin: 0 auto;
+      display: flex;
+      justify-content: center;
     }
   }
 
