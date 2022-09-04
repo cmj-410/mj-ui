@@ -7,7 +7,7 @@ export default {
       { text: '组件', link: '/examples/alert/' }
     ],
     socialLinks: [{ icon: 'github', link: 'https://github.com/cmj-410/mj-ui' }],
-    base: 'mj-ui',
+    base: '/mj-ui/',
     // head: [
     //   [
     //     'script',
