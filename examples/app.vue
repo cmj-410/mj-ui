@@ -94,6 +94,13 @@
   >
   <h1>8.textArea测试</h1>
   <mj-textarea v-model="textAreaValue" />
+  <h1>9.radio测试</h1>
+  <mj-radio v-model="radioValue" label="a" value="value: a" />
+  <mj-radio v-model="radioValue" label="b" value="value: b" />
+  <div>{{ radioValue }}</div>
+  <br />
+  <br />
+  <br />
 </template>
 <script lang="ts" setup>
 import { Colors, Sizes } from './enums'
@@ -109,6 +116,8 @@ const sizeList = Object.values(Sizes)
 const value1 = ref(true)
 
 const textAreaValue = ref('123')
+
+const radioValue = ref(null)
 </script>
 
 <script lang="ts">
