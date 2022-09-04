@@ -4,7 +4,7 @@ export default {
     logo: '/mjUI_logo.png',
     nav: [
       { text: '指南', link: '/guild/installation' },
-      { text: '组件', link: '/examples/alert/' }
+      { text: '组件', link: '/examples/alert/' },
     ],
     socialLinks: [{ icon: 'github', link: 'https://github.com/cmj-410/mj-ui' }],
     base: '/mj-ui-doc/',
@@ -31,23 +31,23 @@ export default {
           items: [
             {
               text: '安装',
-              link: '/guild/installation'
+              link: '/guild/installation',
             },
             {
               text: '快速开始',
-              link: '/guild/quickstart'
-            }
-          ]
+              link: '/guild/quickstart',
+            },
+          ],
         },
         {
           text: '进阶',
           items: [
             {
               text: 'xx',
-              link: '/xx'
-            }
-          ]
-        }
+              link: '/xx',
+            },
+          ],
+        },
       ],
       '/examples/': [
         {
@@ -56,19 +56,23 @@ export default {
           items: [
             {
               text: 'alert 警告提醒',
-              link: '/examples/alert/'
+              link: '/examples/alert/',
             },
             {
               text: 'button 按钮',
-              link: '/examples/button/'
+              link: '/examples/button/',
+            },
+            {
+              text: 'checkbox 复选框',
+              link: '/examples/checkbox/',
             },
             {
               text: 'select 选择器',
-              link: '/examples/select/'
-            }
-          ]
-        }
-      ]
-    }
-  }
+              link: '/examples/select/',
+            },
+          ],
+        },
+      ],
+    },
+  },
 }

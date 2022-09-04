@@ -2,6 +2,13 @@ import { ALLOWED_POSITION } from './constants'
 
 export default [
   {
+    property: 'modelValue(v-model)',
+    type: 'String, Number, Object',
+    default: '-',
+    description: 'Select当前值',
+    required: 'T',
+  },
+  {
     property: 'label-top',
     type: 'String',
     default: '-',
@@ -12,7 +19,7 @@ export default [
     property: 'options',
     type: 'Array, Object[]',
     default: '-',
-    description: 'options数组数据，可以为简单数组或对象数组',
+    description: 'options数组数据，可以为简单数组或包含name属性的对象数组',
     required: 'N',
   },
   {
@@ -22,13 +29,6 @@ export default [
     description: 'options中用于绑定的值',
     required: 'N',
   },
-  // {
-  //   property: 'index',
-  //   type: ['String'],
-  //   default: '-',
-  //   values: [],
-  //   description: 'Index of the object key'
-  // },
   {
     property: 'placeholder',
     type: 'String',

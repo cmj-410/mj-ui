@@ -11,7 +11,6 @@
         :divided="selectDivided"
         :options="firstSelectOptions"
       />
-      <div>{{ selectValue }}</div>
     </template>
     <template #right>
       <span class="showBoxMarginBotm">
@@ -43,11 +42,11 @@ const selectPlacement = ref(null)
 const placementOptions = ALLOWED_POSITION
 const firstSelectOptions = [
   {
-    label: '男',
+    name: '男',
     value: 'male',
   },
   {
-    label: '女',
+    name: '女',
     value: 'female',
   },
 ]

@@ -1,116 +1,148 @@
 <template>
-    <h1>1.按钮测试</h1>
-    <h3>1.1按钮的type属性和按钮组</h3>
-    <mj-button-group>
-        <mj-button :type="typeColor" v-for="typeColor in colorList" :key="typeColor">
-            {{ typeColor }}
-        </mj-button>
-    </mj-button-group>
-    <h3>1.2按钮的size属性</h3>
-    <div class="showBtn">
-        <mj-button type="primary" :size="theSize" v-for="theSize in sizeList" :key="theSize">{{ theSize }}</mj-button>
-    </div>
-    <h3>1.3按钮的icon设置</h3>
-    <div class="showBtn">
-        <mj-button icon="home">home</mj-button>
-        <mj-button icon="boy" :iconAfter="true">boy</mj-button>
-    </div>
-    <h3>1.4按钮的其他属性</h3>
-    <div class="showBtn">
-        <mj-button :loading="true">loading</mj-button>
-        <mj-button type="primary">primary</mj-button>
-        <mj-button :outlined="true" type="primary">outlined</mj-button>
-        <mj-button :pulse="true">pulse</mj-button>
-        <mj-button :disabled="true">disabled</mj-button>
-    </div>
-    <h1>2.警示测试</h1>
-    <h3>2.1警示的type属性</h3>
-    <div>
-        <mj-alert :type="typeColor" :title="'title--' + typeColor" :closable="true" v-for="typeColor in smallColorList"
-            :key="typeColor">{{
-                    typeColor
-            }}
-        </mj-alert>
-    </div>
-    <h1>3.checkBox测试</h1>
-    <h3>2.1警示的type属性</h3>
-    <mj-checkbox :modelValue="value1" @click="value1 = !value1">{{ value1 }}</mj-checkbox>
-    <h1>4.divider测试</h1>
-    <h3>4.1竖向分割线：</h3>
-    <span>
-        A
-        <mj-divider :vertical="true" />
-        B
-    </span>
-    <h3>4.2横向分割线：</h3>
-    <div>1212</div>
-    <mj-divider></mj-divider>
-    <div>3434</div>
-    <h1>5.dropDown测试</h1>
-    <mj-dropdown placement="right">
-        <mj-button>Hover me</mj-button>
-        <template #menu>
-            <mj-dropdown-menu>
-                <mj-dropdown-item>Hello</mj-dropdown-item>
-                <mj-dropdown-item disabled>Disabled</mj-dropdown-item>
-                <mj-dropdown-item icon="cloud">Cloud</mj-dropdown-item>
-                <mj-dropdown-item divided>Divided</mj-dropdown-item>
-            </mj-dropdown-menu>
-        </template>
-    </mj-dropdown>
-    <h1>6.input测试</h1>
-    <mj-input placeholder="placeholder" labelTop="labelTop" prefixIcon="lock"></mj-input>
-    <h1>7.message测试</h1>
-    <mj-button @click="$Message({ duration: 5000, text: 'I have 5000ms left' })">Primary message</mj-button>
-    <mj-button @click="showMessage('success')" type="success">Success message</mj-button>
-    <mj-button @click="showMessage('danger')" type="danger">Danger message</mj-button>
-    <mj-button @click="showMessage('warning')" type="warning">Warning message</mj-button>
+  <h1>1.按钮测试</h1>
+  <h3>1.1按钮的type属性和按钮组</h3>
+  <mj-button-group>
+    <mj-button
+      :type="typeColor"
+      v-for="typeColor in colorList"
+      :key="typeColor"
+    >
+      {{ typeColor }}
+    </mj-button>
+  </mj-button-group>
+  <h3>1.2按钮的size属性</h3>
+  <div class="showBtn">
+    <mj-button
+      type="primary"
+      :size="theSize"
+      v-for="theSize in sizeList"
+      :key="theSize"
+      >{{ theSize }}</mj-button
+    >
+  </div>
+  <h3>1.3按钮的icon设置</h3>
+  <div class="showBtn">
+    <mj-button icon="home">home</mj-button>
+    <mj-button icon="boy" :iconAfter="true">boy</mj-button>
+  </div>
+  <h3>1.4按钮的其他属性</h3>
+  <div class="showBtn">
+    <mj-button :loading="true">loading</mj-button>
+    <mj-button type="primary">primary</mj-button>
+    <mj-button :outlined="true" type="primary">outlined</mj-button>
+    <mj-button :pulse="true">pulse</mj-button>
+    <mj-button :disabled="true">disabled</mj-button>
+  </div>
+  <h1>2.警示测试</h1>
+  <h3>2.1警示的type属性</h3>
+  <div>
+    <mj-alert
+      :type="typeColor"
+      :title="'title--' + typeColor"
+      :closable="true"
+      v-for="typeColor in smallColorList"
+      :key="typeColor"
+      >{{ typeColor }}
+    </mj-alert>
+  </div>
+  <h1>3.checkBox测试</h1>
+  <h3>2.1警示的type属性</h3>
+  <mj-checkbox :modelValue="value1" @click="value1 = !value1">{{
+    value1
+  }}</mj-checkbox>
+  <h1>4.divider测试</h1>
+  <h3>4.1竖向分割线：</h3>
+  <span>
+    A
+    <mj-divider :vertical="true" />
+    B
+  </span>
+  <h3>4.2横向分割线：</h3>
+  <div>1212</div>
+  <mj-divider></mj-divider>
+  <div>3434</div>
+  <h1>5.dropDown测试</h1>
+  <mj-dropdown placement="right">
+    <mj-button>Hover me</mj-button>
+    <template #menu>
+      <mj-dropdown-menu>
+        <mj-dropdown-item>Hello</mj-dropdown-item>
+        <mj-dropdown-item disabled>Disabled</mj-dropdown-item>
+        <mj-dropdown-item icon="cloud">Cloud</mj-dropdown-item>
+        <mj-dropdown-item divided>Divided</mj-dropdown-item>
+      </mj-dropdown-menu>
+    </template>
+  </mj-dropdown>
+  <h1>6.input测试</h1>
+  <mj-input
+    placeholder="placeholder"
+    labelTop="labelTop"
+    prefixIcon="lock"
+  ></mj-input>
+  <h1>7.message测试</h1>
+  <mj-button @click="$Message({ duration: 5000, text: 'I have 5000ms left' })"
+    >Primary message</mj-button
+  >
+  <mj-button @click="showMessage('success')" type="success"
+    >Success message</mj-button
+  >
+  <mj-button @click="showMessage('danger')" type="danger"
+    >Danger message</mj-button
+  >
+  <mj-button @click="showMessage('warning')" type="warning"
+    >Warning message</mj-button
+  >
+  <h1>8.textArea测试</h1>
+  <mj-textarea v-model="textAreaValue" />
 </template>
 <script lang="ts" setup>
 import { Colors, Sizes } from './enums'
-import { ref } from 'vue';
+import { ref } from 'vue'
 
 const colorList = Object.values(Colors)
-const smallColorList = colorList.filter(val => val != 'neutral' && val != 'black')
+const smallColorList = colorList.filter(
+  (val) => val != 'neutral' && val != 'black'
+)
 
 const sizeList = Object.values(Sizes)
 
 const value1 = ref(true)
 
+const textAreaValue = ref('123')
 </script>
 
 <script lang="ts">
 import { defineComponent } from 'vue'
 
 export default defineComponent({
-    methods: {
-        showMessage(type: string) {
-            switch (type) {
-                case 'success':
-                    this.$Message.success({ text: 'Success message!' })
-                    break
-                case 'danger':
-                    this.$Message.danger({ text: 'Danger message!' })
-                    break
-                case 'warning':
-                    this.$Message.warning({ text: 'Warning message!' })
-                    break
-                default:
-                    this.$Message({ text: 'Primary message!' })
-                    break
-            }
-        },
-    }
+  methods: {
+    showMessage(type: string) {
+      switch (type) {
+        case 'success':
+          this.$Message.success({ text: 'Success message!' })
+          break
+        case 'danger':
+          this.$Message.danger({ text: 'Danger message!' })
+          break
+        case 'warning':
+          this.$Message.warning({ text: 'Warning message!' })
+          break
+        default:
+          this.$Message({ text: 'Primary message!' })
+          break
+      }
+    },
+  },
 })
 </script>
 <style lang="less" scoped>
 .showBtn {
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
 
-    button {
-        margin-right: 10px;
-    }
+  button {
+    margin-right: 10px;
+  }
 }
 </style>
