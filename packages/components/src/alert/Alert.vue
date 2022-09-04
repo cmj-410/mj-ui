@@ -11,7 +11,12 @@
           <slot />
         </p>
       </div>
-      <mj-icon v-if="closable" name="clear" class="mj-alert-close" @click="clickCross" />
+      <mj-icon
+        v-if="closable"
+        name="clear"
+        class="mj-alert-close"
+        @click="clickCross"
+      />
     </div>
   </transition>
 </template>
@@ -33,33 +38,35 @@ export default defineComponent({
     type: {
       type: String,
       default: Colors.PRIMARY,
-      validator: (value: Colors) => ALLOWED_TYPES.includes(value),
+      validator: (value: Colors) => ALLOWED_TYPES.includes(value)
     },
     showIcon: { type: Boolean, default: true },
     closable: { type: Boolean, default: false },
     iconbox: { type: Boolean, default: false },
     visible: { type: Boolean, default: true },
     title: { type: String, default: null },
-    body: { type: String, default: null },
+    body: { type: String, default: null }
   },
   emits: ['on-close'],
   setup(props, { emit, slots }) {
     const defaultSlot = useCheckSlot(slots, 'default')
 
     const clickCross = () => emit('on-close')
-    const iconType = computed(() => ICON_NAME_BY_COLOR[props.type as Colors] ?? '')
+    const iconType = computed(
+      () => ICON_NAME_BY_COLOR[props.type as Colors] ?? ''
+    )
     const rootClasses = computed(() => [
       'mj-alert',
       `mj-alert--${props.type}`,
-      !props.body && !defaultSlot?.value && 'mj-alert--small',
+      !props.body && !defaultSlot?.value && 'mj-alert--small'
     ])
 
     return {
       defaultSlot,
       clickCross,
       iconType,
-      rootClasses,
+      rootClasses
     }
-  },
+  }
 })
 </script>

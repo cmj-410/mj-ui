@@ -4,16 +4,14 @@
   href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined"
 />
 
-## 快捷展示
-<mj-select
-  label-top="List of string"
-  v-model="exampleStringValue"
-  :options="exampleStringOptions"
->
-</mj-select>
-
-<script setup>
-import { ref } from 'vue'
-const exampleStringValue = ref(null)
-const exampleStringOptions = ["Test string 1","Test string 2","Test string 3","Test string 4","Test string 5","Test string 6"]
+<script lang="ts" setup>
+import quickShow from './components/quickShow.vue'
+import propsBody from './data/propsBody'
 </script>
+
+## 快捷展示
+<quickShow />
+
+## API文档
+<props-table descriptType="Props"  :propsBody="propsBody" />
+

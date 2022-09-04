@@ -55,15 +55,15 @@ export default {
           collapsible: true,
           items: [
             {
-              text: 'alert',
+              text: 'alert 警告提醒',
               link: '/examples/alert/'
             },
             {
-              text: 'button',
+              text: 'button 按钮',
               link: '/examples/button/'
             },
             {
-              text: 'select',
+              text: 'select 选择器',
               link: '/examples/select/'
             }
           ]
