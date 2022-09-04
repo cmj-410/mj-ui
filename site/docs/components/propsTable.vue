@@ -74,14 +74,14 @@ const getColumnWidth = (val: string) => {
   display: flex;
   flex-direction: column;
   font-size: 10px;
-  th {
-    font-size: 12px;
-  }
   th,
   td {
     border: 1px solid #d3dae6;
   }
-  td:last-child {
+  th {
+    font-size: 12px;
+  }
+  td {
     text-align: center;
   }
   .table {
