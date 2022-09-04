@@ -18,11 +18,11 @@
         <mj-select
           v-model="buttonType"
           placeholder="Select type"
-          label-top="按钮类型"
+          label-top="Button type"
           :options="buttonTypes"
         >
         </mj-select>
-        <mj-input v-model="buttonText" label-top="按钮文案" />
+        <mj-input v-model="buttonText" label-top="Button text" />
         <mj-checkbox v-model="buttonOutlined" label="Outline" />
         <mj-checkbox v-model="buttonRound" label="Round" />
         <mj-checkbox v-model="buttonIcon" label="Icon" />

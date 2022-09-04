@@ -35,6 +35,7 @@ h3 {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    overflow: auto;
     border-right: 1px solid @border-color;
 
     &-content {

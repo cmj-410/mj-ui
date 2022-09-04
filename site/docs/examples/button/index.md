@@ -1,6 +1,3 @@
-<style scoped>
-</style>
-
 <link
   rel="stylesheet"
   href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined"
@@ -42,7 +39,7 @@ const propsBody = [
   {
     property: 'icon',
     type: 'string',
-    default: '/',
+    default: '-',
     description: '添加material-icon',
     required: 'N'
   },
