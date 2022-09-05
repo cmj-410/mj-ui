@@ -51,9 +51,9 @@
   <h1>4.divider测试</h1>
   <h3>4.1竖向分割线：</h3>
   <span>
-    A
+    <span>A</span>
     <mj-divider :vertical="true" />
-    B
+    <span>B</span>
   </span>
   <h3>4.2横向分割线：</h3>
   <div>1212</div>
@@ -104,6 +104,12 @@
   <mj-tag type="primary" :filled="true" :closable="true" @close="clickTagClose"
     >vip</mj-tag
   >
+  <h1>12. switch 测试</h1>
+  <mj-switch type="primary" v-model="switchValue" label="开启" />
+  <h1>13. tooltip 测试</h1>
+  <mj-tooltip content="显示一些tip信息" placement="right-top">
+    ----------<span>hover 我</span>--------
+  </mj-tooltip>
   <br />
   <br />
   <br />
@@ -130,6 +136,8 @@ const toggleValue = ref('choose this')
 const clickTagClose = () => {
   alert('点击了close')
 }
+
+const switchValue = ref(false)
 </script>
 
 <script lang="ts">

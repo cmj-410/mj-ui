@@ -12,11 +12,11 @@ pnpm run exm:dev
 
 ## 打包
 
-pnpm run build:kitty
+pnpm run build:mjUI
 
 ## 发布
 
-pnpm run publish:kitty
+pnpm run publish:mjUI
 
 ## 启动文档
 
@@ -30,10 +30,3 @@ pnpm run docs:build
 
 pnpm run docs:serve
 
-## 执行组件库测试
-
-pnpm run test
-
-## 查看测试覆盖率
-
-pnpm run coverage
