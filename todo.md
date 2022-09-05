@@ -4,3 +4,4 @@
 4. 文档自动部署生成github page
 5. 使用组件无属性提示
 6. 在vitepress 中组件的部分样式被 .vp-doc覆盖
+7. vertical divider在example中无法显示

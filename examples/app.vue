@@ -47,9 +47,7 @@
   </div>
   <h1>3.checkBox测试</h1>
   <h3>2.1警示的type属性</h3>
-  <mj-checkbox :modelValue="value1" @click="value1 = !value1">{{
-    value1
-  }}</mj-checkbox>
+  <mj-checkbox v-model="value1">{{ value1 }}</mj-checkbox>
   <h1>4.divider测试</h1>
   <h3>4.1竖向分割线：</h3>
   <span>
@@ -98,6 +96,14 @@
   <mj-radio v-model="radioValue" label="a" value="value: a" />
   <mj-radio v-model="radioValue" label="b" value="value: b" />
   <div>{{ radioValue }}</div>
+  <h1>10. toggle测试</h1>
+  <mj-toggle v-model="toggleValue" :options="['A', 'B', 'C']" />
+  {{ toggleValue }}
+  <h1>11. tag测试</h1>
+  <mj-tag type="primary" :filled="false">admin</mj-tag>
+  <mj-tag type="primary" :filled="true" :closable="true" @close="clickTagClose"
+    >vip</mj-tag
+  >
   <br />
   <br />
   <br />
@@ -113,11 +119,17 @@ const smallColorList = colorList.filter(
 
 const sizeList = Object.values(Sizes)
 
-const value1 = ref(true)
+const value1 = ref(false)
 
 const textAreaValue = ref('123')
 
 const radioValue = ref(null)
+
+const toggleValue = ref('choose this')
+
+const clickTagClose = () => {
+  alert('点击了close')
+}
 </script>
 
 <script lang="ts">
