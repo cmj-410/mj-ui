@@ -3,6 +3,7 @@
     class="mj-toggle"
     tabindex="0"
     :class="{ 'mj-toggle--round': round }"
+    :style="{ width: toggleWidth }"
     @keyup.left.prevent="selectPrev"
     @keyup.right.prevent="selectNext"
   >
@@ -45,10 +46,13 @@ export default defineComponent({
     round: Boolean,
     icons: Boolean,
     modelValue: [String, Number],
+    toggleWidth: String,
   },
   setup(props, { emit }) {
-    const activeIndex = ref(0)
-    selectValue(0)
+    const activeIndex = ref(-1)
+    if (!props.modelValue || !props.options.includes(props.modelValue)) {
+      selectValue(0)
+    }
 
     function selectValue(i: number) {
       activeIndex.value = i

@@ -70,6 +70,10 @@ export default {
               text: 'select 选择器',
               link: '/examples/select/',
             },
+            {
+              text: 'toggle 开关选择器',
+              link: '/examples/toggle/',
+            },
           ],
         },
       ],

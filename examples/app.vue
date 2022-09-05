@@ -97,7 +97,7 @@
   <mj-radio v-model="radioValue" label="b" value="value: b" />
   <div>{{ radioValue }}</div>
   <h1>10. toggle测试</h1>
-  <mj-toggle v-model="toggleValue" :options="['A', 'B', 'C']" />
+  <mj-toggle v-model="toggleValue" :options="['Amkkkmk', 'B', 'C']" />
   {{ toggleValue }}
   <h1>11. tag测试</h1>
   <mj-tag type="primary" :filled="false">admin</mj-tag>
