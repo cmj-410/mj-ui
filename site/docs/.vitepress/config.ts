@@ -1,5 +1,21 @@
 export default {
-  base: '/mj-ui/',
+  // base: '/mj-ui/',
+  head: [
+    [
+      'script',
+      {
+        async: 'true',
+      },
+      `
+      var resource = document.createElement('link');
+      resource.setAttribute("rel", "stylesheet");
+      resource.setAttribute("href","https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined");
+      resource.setAttribute("type","text/css");
+      var head = document.querySelector('head');
+      head.appendChild(resource);
+        `,
+    ],
+  ],
   themeConfig: {
     siteTitle: false,
     logo: '/mjUI_logo.png',
@@ -8,22 +24,6 @@ export default {
       { text: '组件', link: '/examples/alert/' },
     ],
     socialLinks: [{ icon: 'github', link: 'https://github.com/cmj-410/mj-ui' }],
-    // head: [
-    //   [
-    //     'script',
-    //     {
-    //       async: 'true',
-    //     },
-    //     `
-    //     var resource = document.createElement('link');
-    //     resource.setAttribute("rel", "stylesheet");
-    //     resource.setAttribute("href","https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined");
-    //     resource.setAttribute("type","text/css");
-    //     var head = document.querySelector('head');
-    //     head.appendChild(resource);
-    //       `,
-    //   ],
-    // ],
     sidebar: {
       '/guild/': [
         {
