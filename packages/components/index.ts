@@ -1,6 +1,7 @@
 import * as components from './src/index'
 export * from './src/index'
 import './styles/index.less'
+import { IMJUI } from './types/global'
 
 export default {
   install: (app: any) => {
@@ -15,6 +16,10 @@ export default {
           (components as any)[comkey]
         )
       }
+      app.config.globalProperties.$MJUI = {
+        drawers: [],
+        modals: [],
+      } as IMJUI
     }
   },
 }

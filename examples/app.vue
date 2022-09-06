@@ -134,6 +134,17 @@
       </div>
     </template>
   </mj-popover>
+  <h1>15. tabs测试</h1>
+  <mj-tabs style="flex: 1">
+    <mj-tab title="Tab 1"><h3>First tab</h3></mj-tab>
+    <mj-tab title="Tab 2">Second tab</mj-tab>
+    <mj-tab title="Tab 3" :disabled="disabledTab">Third tab</mj-tab>
+  </mj-tabs>
+  <h1>16. drawer测试</h1>
+  <mj-button type="primary" @click="switchDrawer = true">打开抽屉</mj-button>
+  <mj-drawer v-model="switchDrawer" placement="left">
+    <h3>抽屉内容</h3>
+  </mj-drawer>
   <br />
   <br />
   <br />
@@ -164,6 +175,13 @@ const clickTagClose = () => {
 const switchValue = ref(false)
 
 const removed = ref(false)
+
+const disabledTab = ref(false)
+
+// const signinModal = ref(false)
+// const signincheckbox = ref(null)
+
+const switchDrawer = ref(false)
 </script>
 
 <script lang="ts">

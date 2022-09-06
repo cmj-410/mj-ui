@@ -16,6 +16,7 @@
     "exm:dev": "pnpm run --filter ./examples dev"
   },
   "devDependencies": {
+    "@types/body-scroll-lock": "^3.1.0",
     "@types/gulp": "^4.0.9",
     "@types/gulp-autoprefixer": "^0.0.33",
     "@types/gulp-less": "^0.0.32",
@@ -37,6 +38,7 @@
     "vue": "^3.2.36"
   },
   "dependencies": {
-    "normalize.css": "^8.0.1"
+    "@vueuse/integrations": "5.0.3",
+    "body-scroll-lock": "4.0.0-beta.0"
   }
 }
