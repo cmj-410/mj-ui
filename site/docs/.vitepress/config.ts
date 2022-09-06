@@ -1,5 +1,5 @@
 export default {
-  base: '/mj-ui/',
+  // base: '/mj-ui/',
   head: [
     [
       'script',
@@ -65,6 +65,10 @@ export default {
             {
               text: 'checkbox 复选框',
               link: '/examples/checkbox/',
+            },
+            {
+              text: 'input 输入框',
+              link: '/examples/input/',
             },
             {
               text: 'select 选择器',
