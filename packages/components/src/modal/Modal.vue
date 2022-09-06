@@ -52,8 +52,8 @@ import {
   getCurrentInstance,
 } from 'vue'
 import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock'
-import { useFocusTrap } from '@vueuse/integrations/useFocusTrap'
 import { useCheckSlot } from '../../hooks'
+// import { useFocusTrap } from '@vueuse/integrations/useFocusTrap'
 
 export default defineComponent({
   name: 'mj-modal',
@@ -75,7 +75,7 @@ export default defineComponent({
 
     const MJUI = getCurrentInstance()
 
-    const { hasFocus, activate, deactivate } = useFocusTrap(modalRef)
+    // const { hasFocus, activate, deactivate } = useFocusTrap(modalRef)
 
     function close() {
       emit('update:modelValue', false)
@@ -119,7 +119,7 @@ export default defineComponent({
             if (props.closeOnEsc) {
               document.addEventListener('keydown', pressEsc)
             }
-            activate()
+            // activate()
           } else {
             modalsList.splice(modalsList.indexOf(modalBody.value), 1)
 
@@ -138,7 +138,7 @@ export default defineComponent({
 
             modalBody.value.style.transform = ''
 
-            deactivate()
+            // deactivate()
             setTimeout(enableBodyScroll.bind(this, modalRef.value), 500)
             document.removeEventListener('keydown', pressEsc)
           }
@@ -154,7 +154,7 @@ export default defineComponent({
       modalRef,
       modalBody,
       maskClick,
-      hasFocus,
+      // hasFocus,
       itHasHeader,
       itHasBody,
       itHasActions,

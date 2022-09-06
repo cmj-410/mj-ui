@@ -145,6 +145,11 @@
   <mj-drawer v-model="switchDrawer" placement="left">
     <h3>抽屉内容</h3>
   </mj-drawer>
+  <mj-input
+    placeholder="placeholder"
+    labelTop="labelTop"
+    prefixIcon="lock"
+  ></mj-input>
   <h1>17. modal测试</h1>
   <mj-button @click="signinModal = true">Modal</mj-button>
   <mj-modal v-model="signinModal">

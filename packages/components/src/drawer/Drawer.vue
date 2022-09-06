@@ -38,7 +38,7 @@ import {
 } from 'vue'
 import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock'
 import { Positions } from '../../models/enums'
-import { useFocusTrap } from '@vueuse/integrations/useFocusTrap'
+// import { useFocusTrap } from '@vueuse/integrations/useFocusTrap'
 
 export default defineComponent({
   name: 'mj-drawer',
@@ -60,12 +60,11 @@ export default defineComponent({
     const drawerRef = ref<HTMLElement>()
     const focusRef = ref<HTMLElement>()
 
-    const { activate, deactivate } = useFocusTrap(focusRef)
+    // const { activate, deactivate } = useFocusTrap(focusRef)
 
     watch(
       () => modelValue.value,
       async (active: boolean) => {
-        debugger
         const drawersList =
           MJUI!.appContext.config.globalProperties.$MJUI.drawers
         if (active) {
@@ -93,7 +92,7 @@ export default defineComponent({
           await nextTick()
           if (!props.hideMask) {
             disableBodyScroll(focusRef.value!, { reserveScrollBarGap: true })
-            activate()
+            // activate()
           }
         } else {
           drawersList.splice(drawersList.indexOf(drawerRef.value), 1)
@@ -118,7 +117,7 @@ export default defineComponent({
 
           if (!props.hideMask) {
             enableBodyScroll(focusRef.value!)
-            deactivate()
+            // deactivate()
           }
         }
       }
