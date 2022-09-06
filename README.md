@@ -1,32 +1,9 @@
-## 安装 pnpm
+## 个人ui组件库--- mj-ui
 
-npm i pnpm -g
+1. vue3 + ts
+2. 简洁的样式设计
+4. 组件功能覆盖大部分使用场景
+3. 支持按需引入
 
-## 安装所有依赖
-
-pnpm install
-
-## 本地测试
-
-pnpm run exm:dev
-
-## 打包
-
-pnpm run build:mjUI
-
-## 发布
-
-pnpm run publish:mjUI
-
-## 启动文档
-
-pnpm run docs:dev
-
-## 打包文档
-
-pnpm run docs:build
-
-## 启动打包后文档服务
-
-pnpm run docs:serve
+在线预览 [mj-ui](https://cmj-410.github.io/mj-ui/)
 

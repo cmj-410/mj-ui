@@ -5,7 +5,7 @@ import propsBody from './data/propsBody'
 
 # mj-message组件
 
-## 按钮类型
+## 提示信息类型
 <show-block>
   <typesVue />
 </show-block>
