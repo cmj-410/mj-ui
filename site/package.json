@@ -13,8 +13,5 @@
   "license": "ISC",
   "dependencies": {
     "mj-ui": "workspace:1.0.0"
-  },
-  "devDependencies": {
-    "vitepress": "1.0.0-alpha.13"
   }
 }
