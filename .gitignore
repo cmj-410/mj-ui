@@ -2,4 +2,3 @@ node_modules
 **/es
 **/lib
 **/dist
-site/docs/.vitepress/config.ts
