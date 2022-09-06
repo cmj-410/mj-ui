@@ -23,4 +23,8 @@ export default [
     text: 'toggle 开关选择器',
     link: '/examples/toggle/',
   },
+  {
+    text: 'message 提示信息',
+    link: '/examples/message/',
+  },
 ]

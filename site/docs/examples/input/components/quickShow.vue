@@ -1,5 +1,5 @@
 <template>
-  <show-box title="mj-alert">
+  <show-box title="mj-input">
     <template #left>
       <mj-input
         v-model="inputValue"
