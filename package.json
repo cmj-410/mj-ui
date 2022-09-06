@@ -1,11 +1,7 @@
 {
   "name": "myuilib",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "keywords": [],
-  "author": "cmj",
-  "license": "ISC",
+  "packageManager": "pnpm@7.3.0",
+  "private": true,
   "scripts": {
     "clean:dist": "rimraf ./packages/components/dist",
     "build:mjUI": "pnpm run clean:dist && gulp -f packages/utils/script/build/gulpfile.ts",

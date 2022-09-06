@@ -1,5 +1,5 @@
 export default {
-  base: '/mj-ui/',
+  // base: '/mj-ui/',
   head: [
     [
       'script',
