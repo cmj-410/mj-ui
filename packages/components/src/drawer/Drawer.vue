@@ -111,9 +111,7 @@ export default defineComponent({
               scaleAndTranslate![1] +
               (props.placement === Positions.R ? 10 : -10)
             }%)`
-          })
-
-          drawerRef.value.style.transform = ''
+          })(drawerRef.value as HTMLElement).style.transform = ''
 
           if (!props.hideMask) {
             enableBodyScroll(focusRef.value!)

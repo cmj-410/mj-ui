@@ -11,9 +11,6 @@
     "mj-ui",
     "vue3组件库"
   ],
-  "dependencies": {
-    "@mj-ui/utils": "2.0.1"
-  },
   "author": "cmj",
   "license": "MIT",
   "description": "",

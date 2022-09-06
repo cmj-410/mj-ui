@@ -19,7 +19,7 @@
                 class="mj-modal-body"
                 ref="modalBody"
                 :class="{ 'mj-modal-body--has-image': onlyImageSlot }"
-                :style="!onlyImageSlot ? { maxWidth: width } : null"
+                :style="!onlyImageSlot ? { maxWidth: width } : {}"
               >
                 <slot name="image" />
                 <slot />
@@ -134,9 +134,7 @@ export default defineComponent({
               modalEl.style.transform = `scale(${
                 scaleAndTranslate![0] + 0.05
               }) translateY(${scaleAndTranslate![1] + 5}%)`
-            })
-
-            modalBody.value.style.transform = ''
+            })(modalBody.value as HTMLElement).style.transform = ''
 
             // deactivate()
             setTimeout(enableBodyScroll.bind(this, modalRef.value), 500)
