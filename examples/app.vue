@@ -107,9 +107,33 @@
   <h1>12. switch 测试</h1>
   <mj-switch type="primary" v-model="switchValue" label="开启" />
   <h1>13. tooltip 测试</h1>
-  <mj-tooltip content="显示一些tip信息" placement="right-top">
+  <mj-tooltip content="显示一些tip信息" placement="right">
     ----------<span>hover 我</span>--------
   </mj-tooltip>
+  <h1>14. popover测试</h1>
+  <mj-popover :disabled="removed">
+    <mj-button>Delete</mj-button>
+    <template #content>
+      <div>
+        <p style="margin-bottom: 8px">Please confirm deletion</p>
+        <div style="display: flex; justify-content: flex-end">
+          <mj-button size="small">No</mj-button>
+          <mj-button
+            style="margin-left: 8px"
+            size="small"
+            type="danger"
+            @click="
+              () => {
+                removed = true
+                $Message.success({ text: 'Deleted' })
+              }
+            "
+            >Yes</mj-button
+          >
+        </div>
+      </div>
+    </template>
+  </mj-popover>
   <br />
   <br />
   <br />
@@ -138,6 +162,8 @@ const clickTagClose = () => {
 }
 
 const switchValue = ref(false)
+
+const removed = ref(false)
 </script>
 
 <script lang="ts">
