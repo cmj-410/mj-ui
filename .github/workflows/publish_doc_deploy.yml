@@ -27,7 +27,7 @@ jobs:
           cache: 'pnpm'
 
       - name: Install dependencies
-        run: pnpm i --frozen-lockfile
+        run: pnpm install --no-frozen-lockfile
 
       - name: Install latest mj-ui
         run: cd site && pnpm i mj-ui
