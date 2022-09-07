@@ -1,32 +1,30 @@
 <template>
   <show-box title="mj-modal">
     <template #left>
-      <mj-alert
-        v-show="alertVisible"
-        :iconbox="alertIconBox"
-        :type="alertType"
-        :show-icon="alertShowIcon"
-        :closable="alertClosable"
-        :title="alertTitle"
-        :body="alertBody"
-        @on-close="alertVisible = false"
-      />
+      <mj-button @click="signinModal = true">Modal</mj-button>
+      <mj-modal v-model="signinModal" :closableMask="closeMask">
+        <template #image>
+          <img src="/mjUI_logo.png" />
+        </template>
+
+        <template #header>
+          <h3>modal Header</h3>
+        </template>
+
+        <template #body>
+          <p>Modal body.</p>
+        </template>
+        <template #actions>
+          <mj-button
+            type="primary"
+            @click="$Message({ text: 'ok' }), (signinModal = false)"
+            >确定</mj-button
+          >
+        </template>
+      </mj-modal>
     </template>
     <template #right>
-      <span class="showBoxMarginBotm">
-        <mj-select
-          v-model="alertType"
-          placeholder="Select type"
-          label-top="Alert type"
-          :options="alertTypes"
-        />
-        <mj-input v-model="alertTitle" label-top="Alert title" />
-        <mj-input v-model="alertBody" label-top="Alert Body" />
-        <mj-checkbox v-model="alertShowIcon" label="Icon" />
-        <mj-checkbox v-model="alertIconBox" label="Icon box" />
-        <mj-checkbox v-model="alertClosable" label="Closable" />
-        <mj-checkbox v-model="alertVisible" label="Visible" />
-      </span>
+      <mj-checkbox v-model="closeMask" label="关闭遮罩" />
     </template>
   </show-box>
 </template>
@@ -34,12 +32,6 @@
 <script lang="ts" setup>
 import { ref } from 'vue'
 
-const alertVisible = ref(true)
-const alertTitle = ref('标题')
-const alertBody = ref('这里是主体内容')
-const alertShowIcon = ref(true)
-const alertClosable = ref(false)
-const alertType = ref('primary')
-const alertTypes = ['primary', 'success', 'danger', 'warning']
-const alertIconBox = ref(false)
+const signinModal = ref(false)
+const closeMask = ref(false)
 </script>

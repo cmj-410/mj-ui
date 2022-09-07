@@ -27,4 +27,8 @@ export default [
     text: 'message 提示信息',
     link: '/examples/message/',
   },
+  {
+    text: 'modal 模态框',
+    link: '/examples/modal/',
+  },
 ]

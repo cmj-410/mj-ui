@@ -134,7 +134,8 @@ export default defineComponent({
               modalEl.style.transform = `scale(${
                 scaleAndTranslate![0] + 0.05
               }) translateY(${scaleAndTranslate![1] + 5}%)`
-            })(modalBody.value as HTMLElement).style.transform = ''
+            })
+            ;(modalBody.value as HTMLElement).style.transform = ''
 
             // deactivate()
             setTimeout(enableBodyScroll.bind(this, modalRef.value), 500)
