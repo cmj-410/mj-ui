@@ -43,9 +43,8 @@ export default defineComponent({
     hoverable: Boolean,
     placement: {
       type: String,
-      default: ALLOWED_POSITION[0],
-      validator: (value: Positions) =>
-        Object.values(ALLOWED_POSITION).includes(value),
+      default: Positions.T,
+      validator: (value: Positions) => Object.values(Positions).includes(value),
     },
     permanent: Boolean,
     autoposition: { type: Boolean, default: true },

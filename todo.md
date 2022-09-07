@@ -7,3 +7,4 @@
 7. vertical divider在example中无法显示
 8. 按钮doc中select展示有小圆点和scrollbar
 9. input下的提示信息可设置颜色类型
+10. √--- placement位置参数统一  // tooltip,popover 12, select 8 drawer 2

@@ -3,7 +3,7 @@
     <template #left>
       <mj-popover
         :disabled="isdisabled"
-        :placement="thePlacement"
+        :placement="popoverPlacement"
         :borderless="isBorderless"
       >
         <mj-button>删除</mj-button>
@@ -30,6 +30,12 @@
     </template>
     <template #right>
       <span class="showBoxMarginBotm">
+        <mj-select
+          v-model="popoverPlacement"
+          placeholder="Placement"
+          label-top="位置"
+          :options="placementOptions"
+        />
         <mj-checkbox v-model="isdisabled" label="是否关闭" />
         <mj-checkbox v-model="isBorderless" label="去除内部padding" />
       </span>
@@ -39,10 +45,13 @@
 
 <script lang="ts" setup>
 import { ref } from 'vue'
+import { ALLOWED_POSITION } from '../data/constants'
 
 const isdisabled = ref(false)
-const thePlacement = ref('top')
+const popoverPlacement = ref('top')
 const isBorderless = ref(false)
+
+const placementOptions = ALLOWED_POSITION
 </script>
 
 <style lang="less" scoped>

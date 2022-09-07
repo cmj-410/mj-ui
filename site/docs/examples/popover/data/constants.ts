@@ -13,13 +13,4 @@ const Positions = {
   TR: 'top-right',
 }
 
-export const ALLOWED_POSITION = [
-  Positions.T,
-  Positions.B,
-  Positions.L,
-  Positions.R,
-  Positions.LT,
-  Positions.LB,
-  Positions.RT,
-  Positions.RB,
-]
+export const ALLOWED_POSITION = Object.values(Positions)

@@ -5,10 +5,10 @@ export const ALLOWED_POSITION = [
   Positions.B,
   Positions.L,
   Positions.R,
-  Positions.TL,
-  Positions.TR,
-  Positions.BL,
-  Positions.BR,
+  Positions.LT,
+  Positions.LB,
+  Positions.RT,
+  Positions.RB,
 ]
 
 export const CLASS_SELECTED_OPTION = 'mj-select-option--focused'

@@ -5,12 +5,7 @@
     </span>
 
     <transition :name="transition">
-      <div
-        v-show="show && !disabled"
-        ref="popover"
-        class="mj-tooltip-popper"
-        :class="[placement && `mj-tooltip--${placement}`]"
-      >
+      <div v-show="show && !disabled" ref="popover" class="mj-tooltip-popper">
         <div
           class="mj-tooltip-content"
           :class="{
@@ -42,8 +37,7 @@ export default defineComponent({
     placement: {
       type: String,
       default: Positions.T,
-      validator: (value: Positions) =>
-        [Positions.B, Positions.L, Positions.R, Positions.T].includes(value),
+      validator: (value: Positions) => Object.values(Positions).includes(value),
     },
     autoposition: { type: Boolean, default: true },
   },
