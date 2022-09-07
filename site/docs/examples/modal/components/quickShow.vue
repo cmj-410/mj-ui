@@ -24,7 +24,7 @@
       </mj-modal>
     </template>
     <template #right>
-      <mj-checkbox v-model="closeMask" label="关闭遮罩" />
+      <mj-checkbox v-model="closeMask" label="点击遮罩关闭" />
     </template>
   </show-box>
 </template>

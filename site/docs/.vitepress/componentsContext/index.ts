@@ -31,4 +31,8 @@ export default [
     text: 'modal 模态框',
     link: '/examples/modal/',
   },
+  {
+    text: 'popover 弹出框',
+    link: '/examples/popover/',
+  },
 ]
