@@ -10,6 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@tongy-cai/mj-ui": "workspace:^0.1.2",
     "mj-ui": "workspace:^1.0.0"
   }
 }

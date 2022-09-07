@@ -5,7 +5,7 @@
   "scripts": {
     "clean:dist": "rimraf ./packages/components/dist",
     "build:mjUI": "pnpm run clean:dist && gulp -f packages/utils/script/build/gulpfile.ts",
-    "publish:mjUI": "gulp -f packages/components/script/publish/gulpfile.ts",
+    "publish:mjUI": "gulp -f packages/utils/script/publish/gulpfile.ts",
     "docs:dev": "pnpm run --filter ./site docs:dev",
     "docs:build": "pnpm run --filter ./site docs:build",
     "docs:serve": "pnpm run --filter ./site docs:serve",

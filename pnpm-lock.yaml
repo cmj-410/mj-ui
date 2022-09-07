@@ -55,8 +55,10 @@ importers:
 
   examples:
     specifiers:
+      '@tongy-cai/mj-ui': workspace:^0.1.2
       mj-ui: workspace:^1.0.0
     dependencies:
+      '@tongy-cai/mj-ui': link:../packages/components/dist
       mj-ui: link:../packages/components
 
   packages/components:

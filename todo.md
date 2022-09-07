@@ -8,3 +8,5 @@
 8. 按钮doc中select展示有小圆点和scrollbar
 9. input下的提示信息可设置颜色类型
 10. √--- placement位置参数统一  // tooltip,popover 12, select 8 drawer 2
+11. 打包的组件库存在冗余的文件夹结构，使用rollup的output.preserveModulesRoot 配置没有生效
+12. 打包组件库无法找到声明类型
