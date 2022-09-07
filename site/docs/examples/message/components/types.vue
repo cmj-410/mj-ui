@@ -1,14 +1,8 @@
 <template>
-  <mj-button type="primary" @click="showMessage">Primary message</mj-button>
-  <mj-button type="success" @click="showMessage('success')"
-    >Success message</mj-button
-  >
-  <mj-button type="danger" @click="showMessage('danger')"
-    >Danger message</mj-button
-  >
-  <mj-button type="warning" @click="showMessage('warning')"
-    >Warning message</mj-button
-  >
+  <mj-button type="primary" @click="showMessage">Primary</mj-button>
+  <mj-button type="success" @click="showMessage('success')">Success</mj-button>
+  <mj-button type="danger" @click="showMessage('danger')">Danger</mj-button>
+  <mj-button type="warning" @click="showMessage('warning')">Warning</mj-button>
 </template>
 
 <script lang="ts">

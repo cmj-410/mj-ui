@@ -20,6 +20,10 @@ export default [
     link: '/examples/select/',
   },
   {
+    text: 'tabs 选项卡',
+    link: '/examples/tabs/',
+  },
+  {
     text: 'toggle 开关选择器',
     link: '/examples/toggle/',
   },

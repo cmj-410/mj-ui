@@ -3,7 +3,8 @@ export default [
     property: 'placement',
     type: 'String',
     default: 'top',
-    description: 'popover的位置，可选值：<br/>top,bottom,right,left',
+    description:
+      'popover的位置，可选值：<br/>top,bottom,right,left,bottom-left,bottom-right,top-left,top-right,left-top,left-bottom,right-top,right-bottom',
     required: 'N',
   },
   {
