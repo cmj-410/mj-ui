@@ -174,6 +174,16 @@
       >
     </template>
   </mj-modal>
+  <h1>18. 测试slider滑块</h1>
+  <div style="width: 500px">
+    <mj-slider
+      v-model="stepSliderValue"
+      :step-points="true"
+      :min="0"
+      :max="20"
+      :step="2"
+    />
+  </div>
   <br />
   <br />
   <br />
@@ -210,6 +220,8 @@ const disabledTab = ref(false)
 const signinModal = ref(false)
 
 const switchDrawer = ref(false)
+
+const stepSliderValue = ref(10)
 </script>
 
 <script lang="ts">
