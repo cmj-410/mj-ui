@@ -5,6 +5,7 @@
     "strict": true,
     "target": "ES2015",
     "module": "ESNext",
+    "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
     "moduleResolution": "Node",
@@ -14,6 +15,6 @@
         "@models/*": ["./packages/components/models/*"],
         "@hooks": ["./packages/components/hooks"],
         "@directives": ["./packages/components/directives"],
-    }, 
+    },
   }
 }

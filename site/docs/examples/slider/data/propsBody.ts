@@ -1,0 +1,51 @@
+export default [
+  {
+    property: 'modalValue(v-model)',
+    type: 'Number',
+    default: 0,
+    description: '双向绑定的值',
+    required: 'T',
+  },
+  {
+    property: 'min',
+    type: 'Number',
+    default: 0,
+    description: '最小值',
+    required: 'N',
+  },
+  {
+    property: 'max',
+    type: 'Number',
+    default: 100,
+    description: '最大值',
+    required: 'N',
+  },
+  {
+    property: 'disabled',
+    type: 'Boolean',
+    default: 'false',
+    description: '禁用',
+    required: 'N',
+  },
+  {
+    property: 'stepPoints',
+    type: 'Boolean',
+    default: 'false',
+    description: '显示最小布局刻度',
+    required: 'N',
+  },
+  {
+    property: 'numbers',
+    type: 'Boolean',
+    default: 'false',
+    description: '显示范围',
+    required: 'N',
+  },
+  {
+    property: 'step',
+    type: 'Number',
+    default: 1,
+    description: '步长',
+    required: 'N',
+  },
+]

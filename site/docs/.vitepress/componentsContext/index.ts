@@ -4,6 +4,10 @@ export default [
     link: '/examples/alert/',
   },
   {
+    text: 'badge 徽标',
+    link: '/examples/badge/',
+  },
+  {
     text: 'button 按钮',
     link: '/examples/button/',
   },
@@ -22,6 +26,10 @@ export default [
   {
     text: 'select 选择器',
     link: '/examples/select/',
+  },
+  {
+    text: 'slider 滑块',
+    link: '/examples/slider/',
   },
   {
     text: 'tabs 选项卡',
