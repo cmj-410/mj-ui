@@ -4,7 +4,7 @@
     <div class="mj-number-field">
       <mj-button
         v-if="!hideControls"
-        :disabled="this.disabled || disableController('minus')"
+        :disabled="disabled || disableController('minus')"
         type="primary"
         icon="remove"
         @click="decrease"
@@ -36,7 +36,7 @@
       </div>
       <mj-button
         v-if="!hideControls"
-        :disabled="this.disabled || disableController('plus')"
+        :disabled="disabled || disableController('plus')"
         type="primary"
         icon="add"
         @click="increase"

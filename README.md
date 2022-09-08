@@ -1,4 +1,4 @@
-<p align="center">个人ui组件库 mj-ui</p>
+<h3 align="center">个人ui组件库 mj-ui</h3>
 
 1. vue3 Composition API + ts
 2. 简洁的样式设计
