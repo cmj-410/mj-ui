@@ -184,6 +184,10 @@
       :step="2"
     />
   </div>
+  <h1>19. badge徽标</h1>
+  <mj-badge value="12" type="primary">
+    <mj-button>Primary</mj-button>
+  </mj-badge>
   <br />
   <br />
   <br />
