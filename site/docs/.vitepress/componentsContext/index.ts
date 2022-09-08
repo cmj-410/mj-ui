@@ -28,12 +28,20 @@ export default [
     link: '/examples/tabs/',
   },
   {
+    text: 'tag 标签',
+    link: '/examples/tag/',
+  },
+  {
     text: 'textarea 文本框',
     link: '/examples/textarea/',
   },
   {
     text: 'toggle 开关选择器',
     link: '/examples/toggle/',
+  },
+  {
+    text: 'tooltip 文字提示',
+    link: '/examples/tooltip/',
   },
   {
     text: 'message 提示信息',

@@ -123,11 +123,11 @@ export const usePopover = (props: any) => {
           triggerTemp.offsetWidth / 2
         position.y = triggerTemp.offsetTop - popoverTemp.offsetHeight
         break
-      case 'top-right':
+      case 'top-left':
         position.x = triggerTemp.offsetLeft
         position.y = triggerTemp.offsetTop - popoverTemp.offsetHeight
         break
-      case 'top-left':
+      case 'top-right':
         position.x =
           triggerTemp.offsetLeft +
           triggerTemp.offsetWidth -
@@ -141,11 +141,11 @@ export const usePopover = (props: any) => {
           triggerTemp.offsetHeight / 2 -
           popoverTemp.offsetHeight / 2
         break
-      case 'left-bottom':
+      case 'left-top':
         position.x = triggerTemp.offsetLeft - popoverTemp.offsetWidth
         position.y = triggerTemp.offsetTop
         break
-      case 'left-top':
+      case 'left-bottom':
         position.x = triggerTemp.offsetLeft - popoverTemp.offsetWidth
         position.y =
           triggerTemp.offsetTop +
@@ -159,11 +159,11 @@ export const usePopover = (props: any) => {
           triggerTemp.offsetHeight / 2 -
           popoverTemp.offsetHeight / 2
         break
-      case 'right-bottom':
+      case 'right-top':
         position.x = triggerTemp.offsetLeft + triggerTemp.offsetWidth
         position.y = triggerTemp.offsetTop
         break
-      case 'right-top':
+      case 'right-bottom':
         position.x = triggerTemp.offsetLeft + triggerTemp.offsetWidth
         position.y =
           triggerTemp.offsetTop +
@@ -177,11 +177,11 @@ export const usePopover = (props: any) => {
           triggerTemp.offsetWidth / 2
         position.y = triggerTemp.offsetTop + triggerTemp.offsetHeight
         break
-      case 'bottom-right':
+      case 'bottom-left':
         position.x = triggerTemp.offsetLeft
         position.y = triggerTemp.offsetTop + triggerTemp.offsetHeight
         break
-      case 'bottom-left':
+      case 'bottom-right':
         position.x =
           triggerTemp.offsetLeft +
           triggerTemp.offsetWidth -

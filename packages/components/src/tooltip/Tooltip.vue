@@ -33,14 +33,13 @@ import './styles/index.less'
 import { defineComponent, onMounted } from 'vue'
 import { usePopover } from '../../hooks'
 import { Positions } from '../../models/enums'
-import { ALLOWED_POSITION } from './constants'
 
 export default defineComponent({
   name: 'mj-tooltip',
   props: {
     content: [String, Number],
     disabled: Boolean,
-    hoverable: Boolean,
+    // hoverable: Boolean,
     placement: {
       type: String,
       default: Positions.T,

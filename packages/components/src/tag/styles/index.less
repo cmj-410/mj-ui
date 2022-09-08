@@ -28,7 +28,7 @@
   background-color: #fff;
 
   &-close {
-    font-size: inherit;
+    font-size: inherit !important;
     vertical-align: middle;
     cursor: pointer;
     user-select: none;
@@ -49,9 +49,5 @@
 
   &--danger {
     .set-tag-type(@color-danger);
-  }
-
-  &--black {
-    .set-tag-type(@color-secondary-black);
   }
 }
