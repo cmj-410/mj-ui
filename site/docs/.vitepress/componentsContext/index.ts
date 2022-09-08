@@ -12,6 +12,10 @@ export default [
     link: '/examples/checkbox/',
   },
   {
+    text: 'drawer 抽屉',
+    link: '/examples/drawer/',
+  },
+  {
     text: 'input 输入框',
     link: '/examples/input/',
   },
@@ -22,6 +26,10 @@ export default [
   {
     text: 'tabs 选项卡',
     link: '/examples/tabs/',
+  },
+  {
+    text: 'textarea 文本框',
+    link: '/examples/textarea/',
   },
   {
     text: 'toggle 开关选择器',

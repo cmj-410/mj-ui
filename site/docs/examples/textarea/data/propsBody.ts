@@ -1,0 +1,51 @@
+export default [
+  {
+    property: 'modalValue(v-model)',
+    type: ['String'],
+    default: '-',
+    description: '双向绑定数据内容',
+    required: 'T',
+  },
+  {
+    property: 'placeholder',
+    type: 'String',
+    default: '-',
+    description: 'Placeholder',
+    required: 'N',
+  },
+  {
+    property: 'resizable',
+    type: 'Boolean',
+    default: 'false',
+    description: '是否可以调整textarea的尺寸',
+    required: 'N',
+  },
+  {
+    property: 'resizeOnWrite',
+    type: 'Boolean',
+    default: 'false',
+    description: '是否可以随输入的内容自动调整大小',
+    required: 'N',
+  },
+  {
+    property: 'mask',
+    type: 'Boolean',
+    default: 'false',
+    description: '是否开启遮罩效果',
+    required: 'N',
+  },
+  {
+    property: 'rows',
+    type: 'Number',
+    default: '4',
+    description: 'textarea的行数',
+    required: 'N',
+  },
+  {
+    property: 'disabled',
+    type: 'Boolean',
+    default: 'false',
+    description: '是否禁用',
+    required: 'N',
+  },
+]
