@@ -17,19 +17,19 @@
       <span class="showBoxMarginBotm">
         <mj-select
           v-model="buttonType"
-          placeholder="Select type"
-          label-top="Button type"
+          placeholder="请选择"
+          label-top="按钮类型"
           :options="buttonTypes"
         >
         </mj-select>
-        <mj-input v-model="buttonText" label-top="Button text" />
-        <mj-checkbox v-model="buttonOutlined" label="Outline" />
-        <mj-checkbox v-model="buttonRound" label="Round" />
+        <mj-input v-model="buttonText" label-top="按钮文案" />
+        <mj-checkbox v-model="buttonOutlined" label="强调" />
+        <mj-checkbox v-model="buttonRound" label="圆角" />
         <mj-checkbox v-model="buttonIcon" label="Icon" />
-        <mj-checkbox v-model="buttonLoading" label="Loading" />
-        <mj-checkbox v-model="buttonPulse" label="Pulse" />
-        <mj-checkbox v-model="buttonBlock" label="Block" />
-        <mj-checkbox v-model="buttonDisabled" label="Disabled" />
+        <mj-checkbox v-model="buttonLoading" label="加载中" />
+        <mj-checkbox v-model="buttonPulse" label="跳动" />
+        <mj-checkbox v-model="buttonBlock" label="块级元素" />
+        <mj-checkbox v-model="buttonDisabled" label="禁用" />
       </span>
     </template>
   </show-box>

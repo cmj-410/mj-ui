@@ -14,16 +14,16 @@
     </template>
     <template #right>
       <span class="showBoxMarginBotm">
-        <mj-input v-model="selectLabel" label-top="Select label" />
-        <mj-input v-model="selectPlaceholder" label-top="Select placeholder" />
+        <mj-input v-model="selectLabel" label-top="标签" />
+        <mj-input v-model="selectPlaceholder" label-top="placeholder" />
         <mj-select
           v-model="selectPlacement"
-          placeholder="Placement"
-          label-top="Placement"
+          placeholder="请选择"
+          label-top="位置"
           :options="placementOptions"
         />
-        <mj-checkbox v-model="selectDivided" label="Divided" />
-        <mj-checkbox v-model="selectDisabled" label="Disabled" />
+        <mj-checkbox v-model="selectDivided" label="划分" />
+        <mj-checkbox v-model="selectDisabled" label="禁用" />
       </span>
     </template>
   </show-box>

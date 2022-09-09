@@ -3,7 +3,7 @@ import quickShow from './components/quickShow.vue'
 import propsBody from './data/propsBody'
 </script>
 
-# mj-popover组件
+# mj-popover 弹出框组件
 
 ## 快捷展示
 <quickShow />

@@ -1,11 +1,12 @@
 {
   "name": "@tongy-cai/mj-ui",
-  "version": "0.1.10",
+  "version": "0.1.11",
   "main": "lib/packages/components/index.js",
   "module": "es/packages/components/index.js",
   "files": [
     "es",
-    "lib"
+    "lib",
+    "types"
   ],
   "keywords": [
     "mj-ui",

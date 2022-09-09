@@ -3,7 +3,7 @@ import typesVue from './components/types.vue'
 import propsBody from './data/propsBody'
 </script>
 
-# mj-message组件
+# mj-message 提示信息组件
 
 ## 提示信息类型
 <show-block>

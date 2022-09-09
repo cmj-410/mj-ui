@@ -16,16 +16,16 @@
       <span class="showBoxMarginBotm">
         <mj-select
           v-model="alertType"
-          placeholder="Select type"
-          label-top="Alert type"
+          placeholder="请选择"
+          label-top="警告类型"
           :options="alertTypes"
         />
-        <mj-input v-model="alertTitle" label-top="Alert title" />
-        <mj-input v-model="alertBody" label-top="Alert Body" />
+        <mj-input v-model="alertTitle" label-top="警告标题" />
+        <mj-input v-model="alertBody" label-top="警告体" />
         <mj-checkbox v-model="alertShowIcon" label="Icon" />
-        <mj-checkbox v-model="alertIconBox" label="Icon box" />
-        <mj-checkbox v-model="alertClosable" label="Closable" />
-        <mj-checkbox v-model="alertVisible" label="Visible" />
+        <mj-checkbox v-model="alertIconBox" label="盒型Icon" />
+        <mj-checkbox v-model="alertClosable" label="可关闭" />
+        <mj-checkbox v-model="alertVisible" label="显示" />
       </span>
     </template>
   </show-box>

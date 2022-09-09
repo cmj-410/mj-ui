@@ -13,22 +13,22 @@
     </template>
     <template #right>
       <span class="showBoxMarginBotm">
-        <mj-input v-model="inputPlaceholder" label-top="Input placeholder" />
-        <mj-input v-model="inputTopLabel" label-top="Top label" />
+        <mj-input v-model="inputPlaceholder" label-top="placeholder" />
+        <mj-input v-model="inputTopLabel" label-top="标签" />
         <mj-input
           v-model="inputMessageText"
-          placeholder="输入点什么"
-          label-top="Message text"
+          placeholder="请输入"
+          label-top="输入点什么"
         />
         <mj-select
           v-model="inputStatus"
-          placeholder="Select status"
-          label-top="Status"
+          placeholder="请选择"
+          label-top="状态"
           :options="statuses"
         >
         </mj-select>
-        <mj-checkbox v-model="inputMask" label="Mask" />
-        <mj-checkbox v-model="inputDisabled" label="Disabled" />
+        <mj-checkbox v-model="inputMask" label="遮罩" />
+        <mj-checkbox v-model="inputDisabled" label="禁用" />
       </span>
     </template>
   </show-box>

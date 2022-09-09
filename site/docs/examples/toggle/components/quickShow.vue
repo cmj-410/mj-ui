@@ -5,7 +5,7 @@
         v-model="toggleValue"
         :round="toggleRound"
         toggleWidth="300px"
-        :options="['boy', 'girl', 'man', 'woman']"
+        :options="['修猫', '修狗', '兔几', '脑斧']"
       />
     </template>
     <template #right>

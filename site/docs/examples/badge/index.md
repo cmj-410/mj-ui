@@ -3,7 +3,7 @@ import quickShow from './components/quickShow.vue'
 import propsBody from './data/propsBody'
 </script>
 
-# mj-badge组件
+# mj-badge 徽标组件
 
 ## 快捷展示
 <quickShow />

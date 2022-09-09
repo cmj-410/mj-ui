@@ -8,11 +8,11 @@
         </template>
 
         <template #header>
-          <h3>modal Header</h3>
+          <h3>Header</h3>
         </template>
 
         <template #body>
-          <p>Modal body.</p>
+          <p>Body</p>
         </template>
         <template #actions>
           <mj-button

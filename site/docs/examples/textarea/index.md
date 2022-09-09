@@ -3,7 +3,7 @@ import quickShow from './components/quickShow.vue'
 import propsBody from './data/propsBody'
 </script>
 
-# mj-textarea组件
+# mj-textarea 文本框组件
 
 ## 快捷展示
 <quickShow />

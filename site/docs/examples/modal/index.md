@@ -3,7 +3,7 @@ import quickShow from './components/quickShow.vue'
 import propsBody from './data/propsBody'
 </script>
 
-# mj-modal组件
+# mj-modal 模态框组件
 
 ## 快捷展示
 <quickShow />

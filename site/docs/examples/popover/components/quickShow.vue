@@ -32,7 +32,7 @@
       <span class="showBoxMarginBotm">
         <mj-select
           v-model="popoverPlacement"
-          placeholder="Placement"
+          placeholder="请选择"
           label-top="位置"
           :options="placementOptions"
         />

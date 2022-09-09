@@ -8,7 +8,7 @@
       >
         <mj-textarea
           v-model="textareaValue"
-          placeholder="可以输入.. 鼠标hover有提示信息"
+          placeholder="可以输入..  鼠标hover有提示信息"
           >鼠标悬浮到这里</mj-textarea
         >
       </mj-tooltip>

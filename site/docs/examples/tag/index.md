@@ -3,7 +3,7 @@ import quickShow from './components/quickShow.vue'
 import propsBody from './data/propsBody'
 </script>
 
-# mj-tag组件
+# mj-tag 标签组件
 
 ## 快捷展示
 <quickShow />

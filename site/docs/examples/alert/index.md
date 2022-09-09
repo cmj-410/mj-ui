@@ -3,7 +3,7 @@ import quickShow from './components/quickShow.vue'
 import propsBody from './data/propsBody'
 </script>
 
-# mj-alert组件
+# mj-alert 警告提醒组件
 
 ## 快捷展示
 <quickShow />

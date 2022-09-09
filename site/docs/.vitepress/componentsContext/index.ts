@@ -24,6 +24,18 @@ export default [
     link: '/examples/input/',
   },
   {
+    text: 'message 提示信息',
+    link: '/examples/message/',
+  },
+  {
+    text: 'modal 模态框',
+    link: '/examples/modal/',
+  },
+  {
+    text: 'popover 弹出框',
+    link: '/examples/popover/',
+  },
+  {
     text: 'select 选择器',
     link: '/examples/select/',
   },
@@ -50,17 +62,5 @@ export default [
   {
     text: 'tooltip 文字提示',
     link: '/examples/tooltip/',
-  },
-  {
-    text: 'message 提示信息',
-    link: '/examples/message/',
-  },
-  {
-    text: 'modal 模态框',
-    link: '/examples/modal/',
-  },
-  {
-    text: 'popover 弹出框',
-    link: '/examples/popover/',
   },
 ]

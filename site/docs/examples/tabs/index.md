@@ -3,7 +3,7 @@ import quickShow from './components/quickShow.vue'
 import propsBody from './data/propsBody'
 </script>
 
-# mj-tabs组件
+# mj-tabs 选项卡组件
 
 ## 快捷展示
 <quickShow />

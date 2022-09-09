@@ -17,23 +17,23 @@
       <span class="showBoxMarginBotm">
         <mj-select
           v-model="badgeType"
-          placeholder="Select type"
-          label-top="Badge type"
+          placeholder="请选择"
+          label-top="徽标的类型"
           :options="badgeTypes"
         />
         <div>
           <mj-select
             v-model="badgePosition"
-            placeholder="Select position"
-            label-top="Badge position"
+            placeholder="请选择"
+            label-top="徽标的位置"
             :options="badgePositions"
           />
         </div>
-        <mj-checkbox v-model="badgePoint" label="Point" />
-        <mj-checkbox v-model="badgeSquare" label="Square" />
-        <mj-checkbox v-model="badgeShow" label="Show" />
-        <mj-number-input v-model="badgeMax" label-top="Max value" />
-        <mj-number-input v-model="badgeValue" label-top="Badge value" />
+        <mj-checkbox v-model="badgePoint" label="点状" />
+        <mj-checkbox v-model="badgeSquare" label="方形" />
+        <mj-checkbox v-model="badgeShow" label="显示" />
+        <mj-number-input v-model="badgeMax" label-top="最大值" />
+        <mj-number-input v-model="badgeValue" label-top="徽标的值" />
       </span>
     </template>
   </show-box>

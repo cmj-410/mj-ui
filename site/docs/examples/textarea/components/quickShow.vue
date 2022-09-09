@@ -13,12 +13,12 @@
     </template>
     <template #right>
       <span class="showBoxMarginBotm">
-        <mj-input v-model="textareaPlaceholder" label-top="Placeholder text" />
-        <mj-input v-model="textareaTopLabel" label-top="Label" />
-        <mj-checkbox v-model="textareaResizable" label="Resizable" />
-        <mj-checkbox v-model="textareaResizeWrite" label="Resize on write" />
-        <mj-checkbox v-model="mask" label="Mask" />
-        <mj-checkbox v-model="textareaDisabled" label="Disabled" />
+        <mj-input v-model="textareaPlaceholder" label-top="placeholder" />
+        <mj-input v-model="textareaTopLabel" label-top="标签" />
+        <mj-checkbox v-model="textareaResizable" label="可拉伸" />
+        <mj-checkbox v-model="textareaResizeWrite" label="自适应内容长度" />
+        <mj-checkbox v-model="mask" label="遮罩" />
+        <mj-checkbox v-model="textareaDisabled" label="禁用" />
       </span>
     </template>
   </show-box>
@@ -27,7 +27,7 @@
 <script lang="ts" setup>
 import { ref, watch } from 'vue'
 
-const textareaPlaceholder = ref('textarea placeholder')
+const textareaPlaceholder = ref('placeholder')
 const textareaTopLabel = ref('写点什么吧')
 const textareaResizable = ref(false)
 const textareaDisabled = ref(false)

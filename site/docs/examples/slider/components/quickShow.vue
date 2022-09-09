@@ -15,12 +15,12 @@
     </template>
     <template #right>
       <span class="showBoxMarginBotm">
-        <mj-number-input v-model="sliderMin" label-top="Min" />
-        <mj-number-input v-model="sliderMax" label-top="Max" />
-        <mj-number-input v-model="sliderStep" label-top="Step" />
-        <mj-checkbox v-model="sliderNumbers" label="Numbers" />
-        <mj-checkbox v-model="sliderStepPoints" label="Step points" />
-        <mj-checkbox v-model="sliderDisabled" label="Disabled" />
+        <mj-number-input v-model="sliderMin" label-top="最小值" />
+        <mj-number-input v-model="sliderMax" label-top="最大值" />
+        <mj-number-input v-model="sliderStep" label-top="步长" />
+        <mj-checkbox v-model="sliderNumbers" label="当前值" />
+        <mj-checkbox v-model="sliderStepPoints" label="刻度" />
+        <mj-checkbox v-model="sliderDisabled" label="禁用" />
       </span>
     </template>
   </show-box>

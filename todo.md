@@ -11,3 +11,4 @@
 11. 打包的组件库存在冗余的文件夹结构，使用rollup的output.preserveModulesRoot 配置没有生效
 12. 打包组件库无法找到声明类型
 13. message在setup中无需this的使用
+14. 为npm包添加vue的对等依赖才能正常使用该包

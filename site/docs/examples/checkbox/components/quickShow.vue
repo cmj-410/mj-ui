@@ -18,24 +18,24 @@
       <span class="showBoxMarginBotm">
         <mj-select
           v-model="checkboxType"
-          placeholder="Select type"
-          label-top="Checkbox type"
+          placeholder="请选择"
+          label-top="Checkbox基础类型"
           :options="checkboxTypes"
         >
           >
         </mj-select>
-        <mj-input v-model="checkboxLabel" label-top="Checkbox label" />
+        <mj-input v-model="checkboxLabel" label-top="Checkbox标签" />
         <mj-textarea
           v-model="checkboxSubLabel"
           placeholder="添加额外的说明信息"
           resize-on-write
-          label-top="Checkbox sublabel"
+          label-top="Checkbox子标签"
         />
         <!-- <mj-input v-model="checkboxSubLabel" label-top="Checkbox sublabel" /> -->
-        <mj-input v-model="checkboxIcon" label-top="Checkbox icon" />
-        <mj-checkbox v-model="lineCheck" label="Line through" />
-        <mj-checkbox v-model="checkboxPulse" label="Pulse" />
-        <mj-checkbox v-model="checkboxDisabled" label="Disabled" />
+        <mj-input v-model="checkboxIcon" label-top="Icon" />
+        <mj-checkbox v-model="lineCheck" label="划线" />
+        <mj-checkbox v-model="checkboxPulse" label="跳动" />
+        <mj-checkbox v-model="checkboxDisabled" label="禁用" />
       </span>
     </template>
   </show-box>
