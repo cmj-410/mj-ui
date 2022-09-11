@@ -1,6 +1,12 @@
 @import './scrollbar.less';
 
+@primary-color: #3051ff;
+@common-border: #d1d1d1;
 :root{
-  --vp-c-brand: #3051ff;
+  --vp-c-brand: @primary-color;
   --vp-c-brand-dark: black;
+  --vp-button-brand-border: @common-border;
+  --vp-button-brand-bg: @primary-color;
+  --vp-button-brand-hover-border:@common-border;
+  --vp-button-brand-hover-bg: darken(@primary-color, 10%);
 }
