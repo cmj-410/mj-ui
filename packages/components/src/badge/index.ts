@@ -1,8 +1,9 @@
 import { App } from 'vue'
 import Badge from './Badge.vue'
 
-Badge.install = (Vue: App) => {
-  Vue.component(Badge.name, Badge)
+export default {
+  Badge,
+  install(Vue: App) {
+    Vue.component(this.Badge.name, this.Badge)
+  },
 }
-
-export default Badge

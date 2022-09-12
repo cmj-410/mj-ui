@@ -1,8 +1,9 @@
 import { App } from 'vue'
 import NumberInput from './numberInput.vue'
 
-NumberInput.install = (Vue: App) => {
-  Vue.component(NumberInput.name, NumberInput)
+export default {
+  NumberInput,
+  install(Vue: App) {
+    Vue.component(this.NumberInput.name, this.NumberInput)
+  },
 }
-
-export default NumberInput

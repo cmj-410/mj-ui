@@ -23,7 +23,6 @@
 
 <script lang="ts">
 import './styles/index.less'
-import mjIcon from '../icon'
 import { computed, defineComponent } from 'vue'
 import { Colors } from '../../models/enums'
 import { useCheckSlot } from '../../hooks'
@@ -31,21 +30,18 @@ import { ICON_NAME_BY_COLOR, ALLOWED_TYPES } from './constants'
 
 export default defineComponent({
   name: 'mj-alert',
-  components: {
-    mjIcon
-  },
   props: {
     type: {
       type: String,
       default: Colors.PRIMARY,
-      validator: (value: Colors) => ALLOWED_TYPES.includes(value)
+      validator: (value: Colors) => ALLOWED_TYPES.includes(value),
     },
     showIcon: { type: Boolean, default: true },
     closable: { type: Boolean, default: false },
     iconbox: { type: Boolean, default: false },
     visible: { type: Boolean, default: true },
     title: { type: String, default: null },
-    body: { type: String, default: null }
+    body: { type: String, default: null },
   },
   emits: ['on-close'],
   setup(props, { emit, slots }) {
@@ -58,15 +54,15 @@ export default defineComponent({
     const rootClasses = computed(() => [
       'mj-alert',
       `mj-alert--${props.type}`,
-      !props.body && !defaultSlot?.value && 'mj-alert--small'
+      !props.body && !defaultSlot?.value && 'mj-alert--small',
     ])
 
     return {
       defaultSlot,
       clickCross,
       iconType,
-      rootClasses
+      rootClasses,
     }
-  }
+  },
 })
 </script>

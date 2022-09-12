@@ -1,8 +1,11 @@
 <template>
-  <li class="mj-dropdown-item" :class="[
-    disabled && 'mj-dropdown-item--disabled',
-    divided && 'mj-dropdown-item--divided',
-  ]">
+  <li
+    class="mj-dropdown-item"
+    :class="[
+      disabled && 'mj-dropdown-item--disabled',
+      divided && 'mj-dropdown-item--divided',
+    ]"
+  >
     <mj-icon v-if="icon" class="mj-dropdown-icon" :name="icon"></mj-icon>
     <span class="mj-dropdown-text">
       <slot></slot>

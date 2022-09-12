@@ -33,14 +33,10 @@
 <script lang="ts">
 import './styles/index.less'
 import { computed, defineComponent, PropType, ref } from 'vue'
-import mjIcon from '../icon'
 import { options } from 'less'
 
 export default defineComponent({
   name: 'mj-toggle',
-  components: {
-    mjIcon,
-  },
   props: {
     options: { type: Array as PropType<(string | number)[]>, required: true },
     round: Boolean,

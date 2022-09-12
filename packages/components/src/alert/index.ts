@@ -1,8 +1,9 @@
-import Alert from "./Alert.vue";
-import { App } from "vue";
+import Alert from './Alert.vue'
+import { App } from 'vue'
 
-Alert.install = (Vue: App) => {
-  Vue.component(Alert.name, Alert);
-};
-
-export default Alert;
+export default {
+  Alert,
+  install(Vue: App) {
+    Vue.component(this.Alert.name, this.Alert)
+  },
+}

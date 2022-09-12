@@ -32,6 +32,6 @@
 import { ref } from 'vue'
 
 const verticalTab = ref(false)
-const boxTab = ref('Tab 1')
+const boxTab = ref(true)
 const disabledTab = ref(null)
 </script>

@@ -63,13 +63,11 @@
 <script lang="ts">
 import './styles/index.less'
 import { defineComponent } from 'vue'
-import mjIcon from '../icon'
 import { Colors } from '../../models/enums'
 
 export default defineComponent({
   name: 'mj-checkbox',
   inheritAttrs: false,
-  components: { mjIcon },
   props: {
     type: {
       default: Colors.PRIMARY,

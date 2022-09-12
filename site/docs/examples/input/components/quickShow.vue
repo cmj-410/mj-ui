@@ -44,7 +44,7 @@ const inputValue = ref('')
 const inputTopLabel = ref('请输入')
 const inputMessageText = ref('')
 const inputDisabled = ref(false)
-const inputStatus = ref('default')
+const inputStatus = ref('neutral')
 const inputMask = ref(false)
-const statuses = ['default', 'success', 'danger', 'warning']
+const statuses = ['neutral', 'success', 'danger', 'warning']
 </script>

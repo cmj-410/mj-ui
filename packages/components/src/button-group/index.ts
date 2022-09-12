@@ -1,8 +1,9 @@
-import { App } from "vue";
-import ButtonGroup from "./ButtonGroup.vue";
+import { App } from 'vue'
+import ButtonGroup from './ButtonGroup.vue'
 
-ButtonGroup.install = (Vue: App) => {
-  Vue.component(ButtonGroup.name, ButtonGroup);
-};
-
-export default ButtonGroup;
+export default {
+  ButtonGroup,
+  install(Vue: App) {
+    Vue.component(this.ButtonGroup.name, this.ButtonGroup)
+  },
+}

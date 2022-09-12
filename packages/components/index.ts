@@ -6,20 +6,17 @@ import { IMJUI } from './types/global'
 export default {
   install: (app: any) => {
     for (const comkey in components) {
-      if ((components as any)[comkey].theName == 'mj-' + 'message') {
+      if ((components as any)[comkey]?.theName == 'mj-' + 'message') {
         const temp = (components as any)[comkey]
         temp._context = app._context
         app.config.globalProperties.$Message = temp
       } else {
-        app.component(
-          (components as any)[comkey].name,
-          (components as any)[comkey]
-        )
+        app.use((components as any)[comkey])
       }
-      app.config.globalProperties.$MJUI = {
-        drawers: [],
-        modals: [],
-      } as IMJUI
     }
+    app.config.globalProperties.$MJUI = {
+      drawers: [],
+      modals: [],
+    } as IMJUI
   },
 }

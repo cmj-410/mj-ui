@@ -39,7 +39,6 @@ export default defineComponent({
   props: {
     content: [String, Number],
     disabled: Boolean,
-    // hoverable: Boolean,
     placement: {
       type: String,
       default: Positions.T,

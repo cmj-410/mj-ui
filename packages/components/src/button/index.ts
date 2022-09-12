@@ -1,8 +1,9 @@
-import { App } from "vue";
-import Button from "./Button.vue";
+import { App } from 'vue'
+import Button from './Button.vue'
 
-Button.install = (Vue: App) => {
-  Vue.component(Button.name, Button);
-};
-
-export default Button;
+export default {
+  Button,
+  install(Vue: App) {
+    Vue.component(this.Button.name, this.Button)
+  },
+}

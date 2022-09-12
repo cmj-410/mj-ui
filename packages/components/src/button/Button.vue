@@ -13,17 +13,11 @@
 <script lang="ts">
 import './styles/index.less'
 import { defineComponent, computed } from 'vue'
-import mjIcon from '../icon'
-import mjLoading from '../loading'
 import { Sizes, Colors } from '../../models/enums'
 // import { Sizes, Colors } from '@models/enums'
 
 export default defineComponent({
   name: 'mj-button',
-  components: {
-    mjIcon,
-    mjLoading,
-  },
   props: {
     type: {
       type: String,
@@ -61,9 +55,9 @@ export default defineComponent({
           : { 'mj-btn--neutral': true }),
         ...(props.icon
           ? {
-            [props.iconAfter ? 'mj-btn--icon-right' : 'mj-btn--icon-left']:
-              true,
-          }
+              [props.iconAfter ? 'mj-btn--icon-right' : 'mj-btn--icon-left']:
+                true,
+            }
           : null),
       },
     ])

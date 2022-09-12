@@ -1,0 +1,15 @@
+@import './variables.less';
+
+.VPSidebarGroup{
+  .VPLink.link{
+    padding-left: 0.6em;
+    margin: 0.5em 0;
+    border-radius: 4px;
+    &.active{
+      background-color: lighten(@primary-color, 30%);
+      .link-text{
+        font-weight: bolder;
+      }
+    }
+  }
+}

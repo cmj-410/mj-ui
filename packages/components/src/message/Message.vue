@@ -1,7 +1,13 @@
 <template>
   <transition name="fade-bottom" @after-leave="destroy">
-    <div v-show="show" :style="{ top: `${top}px` }" class="mj-message" :class="[`mj-message--${type}`]"
-      @mouseleave="startTimer" @mouseenter="clearTimer">
+    <div
+      v-show="show"
+      :style="{ top: `${top}px` }"
+      class="mj-message"
+      :class="[`mj-message--${type}`]"
+      @mouseleave="startTimer"
+      @mouseenter="clearTimer"
+    >
       <mj-icon class="mj-message-icon" :name="icon || computedIcon" />
       <span class="mj-message-text">{{ text }}</span>
     </div>
@@ -12,7 +18,7 @@
 import './styles/index.less'
 import { Colors } from '../../models/enums'
 import { defineComponent } from 'vue'
-import mjIcon from '../icon'
+import { mjIcon } from '../icon'
 
 const typeIcon: { [key in Colors]?: string } = {
   [Colors.PRIMARY]: 'info_outline',
@@ -33,7 +39,7 @@ export default defineComponent({
       text: '',
       icon: '',
       duration: 4000,
-      onClose: () => { },
+      onClose: () => {},
       top: 6,
       type: Colors.PRIMARY,
       messageTimer: null as any,

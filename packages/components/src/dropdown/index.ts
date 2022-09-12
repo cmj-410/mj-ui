@@ -1,22 +1,34 @@
-import Dropdown from "./Dropdown.vue";
-import DropdownMenu from "./DropdownMenu.vue";
-import DropdownItem from "./DropdownItem.vue";
-import { App } from "vue";
+import Dropdown from './Dropdown.vue'
+import DropdownMenu from './DropdownMenu.vue'
+import DropdownItem from './DropdownItem.vue'
+import { App } from 'vue'
 
-const dropdown = {
+const dropdown = [Dropdown, DropdownMenu, DropdownItem]
+
+export const mjDropdown = {
   Dropdown,
+  install(Vue: App) {
+    Vue.component(this.Dropdown.name, this.Dropdown)
+  },
+}
+export const mjDropdownMenu = {
   DropdownMenu,
+  install(Vue: App) {
+    Vue.component(this.DropdownMenu.name, this.DropdownMenu)
+  },
+}
+export const mjDropdownItem = {
   DropdownItem,
-};
-
-for (const elem in dropdown) {
-  if (dropdown.hasOwnProperty(elem)) {
-    // @ts-ignore
-    const element = dropdown[elem];
-    element.install = (Vue: App) => {
-      Vue.component(element.name, element);
-    };
-  }
+  install(Vue: App) {
+    Vue.component(this.DropdownItem.name, this.DropdownItem)
+  },
 }
 
-export default dropdown;
+export default {
+  dropdown,
+  install(Vue: App) {
+    for (const elem of dropdown) {
+      Vue.component(elem.name, elem)
+    }
+  },
+}
