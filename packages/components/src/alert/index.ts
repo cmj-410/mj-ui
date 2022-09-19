@@ -7,3 +7,8 @@ export default {
     Vue.component(this.Alert.name, this.Alert)
   },
 }
+
+// Alert.install = function (Vue: App) {
+//   Vue.component(this.name, this)
+// }
+// export default Alert
