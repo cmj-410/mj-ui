@@ -8,6 +8,13 @@ export default [
     required: 'N',
   },
   {
+    property: 'text',
+    type: 'Boolean',
+    default: 'false',
+    description: '是否为文本按钮',
+    required: 'N',
+  },
+  {
     property: 'outlined',
     type: 'Boolean',
     default: 'false',
@@ -33,6 +40,13 @@ export default [
     type: 'string',
     default: '-',
     description: '添加material-icon',
+    required: 'N',
+  },
+  {
+    property: 'iconAfter',
+    type: 'Boolean',
+    default: 'false',
+    description: 'icon显示在右侧',
     required: 'N',
   },
   {

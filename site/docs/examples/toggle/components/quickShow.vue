@@ -9,7 +9,7 @@
       />
     </template>
     <template #right>
-      <mj-checkbox v-model="toggleRound" label="Round" />
+      <mj-checkbox v-model="toggleRound" label="圆角" />
     </template>
   </show-box>
 </template>

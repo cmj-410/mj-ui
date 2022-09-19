@@ -3,7 +3,7 @@
     <template #left>
       <mj-checkbox
         v-model="checkboxValue"
-        :line-through="lineCheck"
+        :lineThrough="lineCheck"
         :disabled="checkboxDisabled"
         :type="checkboxType"
         :pulse="checkboxPulse"
@@ -59,11 +59,5 @@ const checkboxTypes = [
   'black',
   'neutral',
 ]
-
-// const typesCheck = ref(false)
-// const iconsCheck = ref(false)
-
 const lineCheck = ref(false)
-
-// const pulseValue = ref(false)
 </script>
