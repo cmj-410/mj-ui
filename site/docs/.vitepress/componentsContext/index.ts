@@ -44,6 +44,10 @@ export default [
     link: '/examples/slider/',
   },
   {
+    text: 'table 表格',
+    link: '/examples/table/',
+  },
+  {
     text: 'tabs 选项卡',
     link: '/examples/tabs/',
   },

@@ -1,0 +1,96 @@
+export const tableProps = [
+  {
+    property: 'cols',
+    type: 'Array',
+    default: '[]',
+    description: '表格头部列表',
+    required: 'T',
+  },
+  {
+    property: 'min',
+    type: 'Array',
+    default: '[]',
+    description: '表格数据',
+    required: 'N',
+  },
+  {
+    property: 'height',
+    type: 'Number',
+    default: '-',
+    description: '固定高度',
+    required: 'N',
+  },
+  {
+    property: 'loading',
+    type: 'Boolean',
+    default: 'false',
+    description: 'loading状态',
+    required: 'N',
+  },
+  {
+    property: 'border',
+    type: 'Boolean',
+    default: 'false',
+    description: '显示边框',
+    required: 'N',
+  },
+  {
+    property: 'stripe',
+    type: 'Boolean',
+    default: 'false',
+    description: '斑马纹',
+    required: 'N',
+  },
+]
+
+export const tableColumnsProps = [
+  {
+    property: 'label',
+    type: 'String',
+    default: '-',
+    description: '列标题',
+    required: 'T',
+  },
+  {
+    property: 'key',
+    type: 'String, Number',
+    default: '-',
+    description: '表格数据中对应列的键',
+    required: 'T',
+  },
+  {
+    property: 'width',
+    type: 'String, Number',
+    default: '-',
+    description: '列的宽度',
+    required: 'N',
+  },
+  {
+    property: 'min-width',
+    type: 'String, Number',
+    default: '-',
+    description: '列的最小宽度',
+    required: 'N',
+  },
+  {
+    property: 'align',
+    type: 'String',
+    default: '-',
+    description: '列的对齐方式，可选值为：<br/>left, center, right',
+    required: 'N',
+  },
+  {
+    property: 'header-align',
+    type: 'String',
+    default: '-',
+    description: '表头的列对齐方式，可选值为：<br/>left, center, right',
+    required: 'N',
+  },
+  {
+    property: 'scope',
+    type: 'Object',
+    default: '-',
+    description: '作用域插槽，用于自定义',
+    required: 'N',
+  },
+]

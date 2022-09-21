@@ -188,6 +188,30 @@
   <mj-badge value="12" type="primary">
     <mj-button>Primary</mj-button>
   </mj-badge>
+  <h1>20. table</h1>
+  <div class="tableWrapper">
+    <mj-table :cols="demoCol" :data-source="demoData" border stripe />
+  </div>
+  <div class="tableWrapper">
+    <mj-table :cols="demoCol2" fillEmpty="/" :data-source="demoData2" border>
+      <template #seat="{ row }">
+        <span style="font-weight: bold">{{ row.seat || '-' }}</span>
+      </template>
+      <template #name="{ row }">
+        <mj-tag>{{ row.name || '-' }}</mj-tag>
+      </template>
+      <template #results="{ row }">
+        <span>{{ row.results || '-' }}</span>
+      </template>
+      <template #ranking="{ row }">
+        <span>{{ row.ranking || '-' }}</span>
+      </template>
+      <template #action>
+        <mj-button type="primary" size="small">Edit</mj-button>
+        <mj-button type="danger" size="small">Delete</mj-button>
+      </template>
+    </mj-table>
+  </div>
   <br />
   <br />
   <br />
@@ -226,6 +250,35 @@ const signinModal = ref(false)
 const switchDrawer = ref(false)
 
 const stepSliderValue = ref(10)
+
+const demoCol = [
+  { label: '座号', key: 'seat', width: 100 },
+  { label: '姓名', key: 'name' },
+  { label: '成绩', key: 'results' },
+  { label: '班级排名', key: 'ranking' },
+]
+const demoData = [
+  { seat: '1', name: '李小颖', results: '522', ranking: '4' },
+  { seat: '15', name: '杜小浩', results: '462', ranking: '18' },
+  { seat: '18', name: '汤小青', results: '482', ranking: '12' },
+  { seat: '28', name: '田小锋', results: '475', ranking: '15' },
+]
+
+const demoCol2 = [
+  { label: '座号', width: 50, scope: { customRender: 'seat' } },
+  { align: 'center', label: '姓名', scope: { customRender: 'name' } },
+  { label: '成绩', scope: { customRender: 'results' } },
+  { label: '班级排名', scope: { customRender: 'ranking' } },
+  { align: 'center', label: '操作', scope: { customRender: 'action' } },
+]
+const demoData2 = [
+  { seat: '1', name: '李小颖', results: '522', ranking: '4' },
+  { seat: '15', name: '杜小浩', results: '44', ranking: '18' },
+  { seat: '18', name: '汤小青', results: '482', ranking: '12' },
+  { seat: '28', name: '田小锋', results: '475', ranking: '15' },
+  { seat: '35', name: '吴小豪', results: '372', ranking: '41' },
+  { seat: '41', name: '吴小可', results: '404', ranking: '33' },
+]
 </script>
 
 <script lang="ts">
@@ -261,5 +314,8 @@ export default defineComponent({
   button {
     margin-right: 10px;
   }
+}
+.tableWrapper {
+  width: 800px;
 }
 </style>
